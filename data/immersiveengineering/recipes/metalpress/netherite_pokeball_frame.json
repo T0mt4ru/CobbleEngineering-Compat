@@ -6,7 +6,7 @@
                 "item":"minecraft:netherite_ingot"
             }
         },
-        "mold":"tomtaru:mold_pokeball_frame",
+        "mold":"tmtceic:mold_pokeball_frame",
         "result":{
             "base_ingredient":{
                 "item":"tmtceic:netherite_pokeball_frame"
