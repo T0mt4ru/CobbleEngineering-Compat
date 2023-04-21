@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#WB",
+        " Q ",
+        " W "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:red_dye"
+        },
+        "W": {
+            "item": "minecraft:white_dye"
+        },
+        "B": {
+            "item": "minecraft:black_dye"
+        },
+        "Q": {
+            "item": "tmtceic:aluminum_pokeball_frame"
+        }
+    },
+    "result": {
+        "item": "cobblemon:timer_ball",
+        "count": 1
+    }
+}
