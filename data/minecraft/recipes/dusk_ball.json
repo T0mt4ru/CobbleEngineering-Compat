@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " B ",
+        " L "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:black_dye"
+        },
+        "B": {
+            "item": "tmtceic:aluminum_pokeball_frame"
+        },
+        "L": {
+            "item": "minecraft:lime_dye"
+        }
+    },
+    "result": {
+        "item": "cobblemon:dusk_ball",
+        "count": 1
+    }
+}
