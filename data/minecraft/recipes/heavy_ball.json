@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# B",
+        " L ",
+        " W "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:black_dye"
+        },
+        "B": {
+            "item": "minecraft:blue_dye"
+        },
+        "L": {
+            "item": "tmtceic:aluminum_pokeball_frame"
+        },
+        "W": {
+            "item": "minecraft:white_dye"
+        }
+    },
+    "result": {
+        "item": "cobblemon:heavy_ball",
+        "count": 1
+    }
+}
