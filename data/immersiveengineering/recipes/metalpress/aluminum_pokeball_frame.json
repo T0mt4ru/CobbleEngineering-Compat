@@ -4,7 +4,7 @@
         "input":{
             "base_ingredient":{
                 "item":"immersiveengineering:ingot_aluminum"
-            },
+            }
         },
         "mold":"tomtaru:mold_pokeball_frame",
         "result":{
