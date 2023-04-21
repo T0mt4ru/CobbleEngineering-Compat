@@ -6,7 +6,7 @@
                 "item":"immersiveengineering:ingot_aluminum"
             }
         },
-        "mold":"tmrceic:mold_pokeball_frame",
+        "mold":"tmtceic:mold_pokeball_frame",
         "result":{
             "base_ingredient":{
                 "item":"tmtceic:aluminum_pokeball_frame"
