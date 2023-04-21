@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B#",
+        " T ",
+        " W "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:red_dye"
+        },
+        "B": {
+            "item": "minecraft:black_dye"
+        },
+        "T": {
+            "item": "tmtceic:aluminum_pokeball_frame"
+        },
+        "W": {
+            "item": "minecraft:white_dye"
+        }
+    },
+    "result": {
+        "item": "cobblemon:luxury_ball",
+        "count": 1
+    }
+}
