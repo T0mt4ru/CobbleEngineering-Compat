@@ -1,0 +1,16 @@
+{
+        "type":"immersiveengineering:metal_press",
+        "energy":3200,
+        "input":{
+            "base_ingredient":{
+                "item":"cobblemon:black_apricorn"
+            },
+        },
+        "mold":"tmtceic:mold_pokeball_frame",
+        "result":{
+            "base_ingredient":{
+                "item":"cobblemon:slate_ball"
+            },
+            "count":1
+        }
+    }
