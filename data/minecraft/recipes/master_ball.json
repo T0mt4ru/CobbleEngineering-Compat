@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "PnP",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:shulker_shell"
+        },
+        "P": {
+            "item": "cobblemon:pink_apricorn"
+        },
+        "n": {
+            "item": "tmtceic:netherite_pokeball_frame"
+        }
+    },
+    "result": {
+        "item": "cobblemon:master_ball",
+        "count": 1
+    }
+}
