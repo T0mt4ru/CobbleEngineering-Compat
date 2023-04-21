@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# W",
+        " B ",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:blue_dye"
+        },
+        "W": {
+            "item": "minecraft:white_dye"
+        },
+        "B": {
+            "item": "tmtceic:aluminum_pokeball_frame"
+        }
+    },
+    "result": {
+        "item": "cobblemon:dive_ball",
+        "count": 1
+    }
+}
