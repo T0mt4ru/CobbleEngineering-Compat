@@ -4,7 +4,7 @@
         "input":{
             "base_ingredient":{
                 "item":"cobblemon:yellow_apricorn"
-            },
+            }
         },
         "mold":"tmtceic:mold_pokeball_frame",
         "result":{
