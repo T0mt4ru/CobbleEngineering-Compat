@@ -1,1 +1,11 @@
-{"type":"immersiveengineering:crusher","energy":6000,"input":{"item":"cobblemon:moon_stone_ore"},"result":{"base_ingredient":{"item":"cobblemon:moon_stone"},"count":2}}
+{
+  "type":"immersiveengineering:crusher",
+  "energy":6000,
+  "input":{
+    "item":"cobblemon:moon_stone_ore"
+  },
+  "result":{
+    "item":"cobblemon:moon_stone",
+    "count":2
+  },"secondaries":[]
+}
