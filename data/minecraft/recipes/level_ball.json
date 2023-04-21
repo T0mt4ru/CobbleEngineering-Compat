@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#RB",
+        " S ",
+        " W "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:yellow_dye"
+        },
+        "R": {
+            "item": "minecraft:red_dye"
+        },
+        "B": {
+            "item": "minecraft:black_dye"
+        },
+        "S": {
+            "item": "tmtceic:aluminum_pokeball_frame"
+        },
+        "W": {
+            "item": "minecraft:white_dye"
+        }
+    },
+    "result": {
+        "item": "cobblemon:level_ball",
+        "count": 1
+    }
+}
