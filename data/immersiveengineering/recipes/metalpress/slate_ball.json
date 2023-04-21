@@ -4,7 +4,7 @@
         "input":{
             "base_ingredient":{
                 "item":"cobblemon:black_apricorn"
-            },
+            }
         },
         "mold":"tmtceic:mold_pokeball_frame",
         "result":{
