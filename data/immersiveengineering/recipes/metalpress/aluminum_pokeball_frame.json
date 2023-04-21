@@ -3,13 +3,13 @@
         "energy":3200,
         "input":{
             "base_ingredient":{
-                "item":"immersiveengineering:ingot_aluminum"
+                "item":"minecraft:netherite_ingot"
             },
         },
         "mold":"tomtaru:mold_pokeball_frame",
         "result":{
             "base_ingredient":{
-                "item":"tomtaru:aluminum_pokeball_frame"
+                "item":"tmtceic:netherite_pokeball_frame"
             },
             "count":2
         }
