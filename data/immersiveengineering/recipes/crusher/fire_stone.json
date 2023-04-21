@@ -1,1 +1,21 @@
-{"type":"immersiveengineering:crusher","energy":6000,"input":{"item":"cobblemon:fire_stone"},"result":{"base_ingredient":{"item":"minecraft:blaze_powder"},"count":5},"secondaries":[{"chance":0.5,"output":{"item":"minecraft:blaze_powder"}]}
+{
+  "type":"immersiveengineering:crusher",
+  "energy":6000,
+  "input":{
+    "item":"cobblemon:fire_stone"
+  },
+  "result":{
+    "base_ingredient":{
+      "item":"minecraft:blaze_powder"
+    },
+    "count":5
+  },
+  "secondaries":[
+    {
+      "chance":0.5,
+      "output":{
+        "item":"minecraft:blaze_powder"
+      }
+    }
+  ]
+}
