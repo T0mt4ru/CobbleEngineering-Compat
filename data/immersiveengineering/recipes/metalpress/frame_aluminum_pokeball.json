@@ -9,7 +9,7 @@
         "mold":"tomtaru:mold_pokeball_frame",
         "result":{
             "base_ingredient":{
-                "item":"tomtaru:aluminum_pokeball_frame"
+                "item":"tmtceic:aluminum_pokeball_frame"
             },
             "count":2
         }
