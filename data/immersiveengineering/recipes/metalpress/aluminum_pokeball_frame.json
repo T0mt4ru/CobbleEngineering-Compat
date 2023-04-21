@@ -1,0 +1,16 @@
+{
+        "type":"immersiveengineering:metal_press",
+        "energy":3200,
+        "input":{
+            "base_ingredient":{
+                "item":"immersiveengineering:ingot_aluminum"
+            },
+        },
+        "mold":"tomtaru:mold_pokeball_frame",
+        "result":{
+            "base_ingredient":{
+                "item":"tomtaru:aluminum_pokeball_frame"
+            },
+            "count":2
+        }
+    }
