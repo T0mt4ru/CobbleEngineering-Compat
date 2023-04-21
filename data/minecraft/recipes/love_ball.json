@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        " B ",
+        " W "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:pink_dye"
+        },
+        "B": {
+            "item": "tmtceic:aluminum_pokeball_frame"
+        },
+        "W": {
+            "item": "minecraft:white_dye"
+        }
+    },
+    "result": {
+        "item": "cobblemon:love_ball",
+        "count": 1
+    }
+}
