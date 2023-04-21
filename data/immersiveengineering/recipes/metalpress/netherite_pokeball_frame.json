@@ -4,7 +4,7 @@
         "input":{
             "base_ingredient":{
                 "item":"minecraft:netherite_ingot"
-            },
+            }
         },
         "mold":"tomtaru:mold_pokeball_frame",
         "result":{
