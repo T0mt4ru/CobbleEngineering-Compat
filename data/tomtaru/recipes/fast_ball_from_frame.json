@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# Y",
+        " B ",
+        " W "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:red_dye"
+        },
+        "Y": {
+            "item": "minecraft:yellow_dye"
+        },
+        "B": {
+            "item": "tmtceic:aluminum_pokeball_frame"
+        },
+        "W": {
+            "item": "minecraft:white_dye"
+        }
+    },
+    "result": {
+        "item": "cobblemon:fast_ball",
+        "count": 4
+    }
+}

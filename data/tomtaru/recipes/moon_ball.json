@@ -1,29 +1,29 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#YB",
-        " J ",
+        " Y ",
+        "BID",
         " W "
     ],
     "key": {
-        "#": {
-            "item": "minecraft:blue_dye"
-        },
-        "Y": {
-            "item": "minecraft:yellow_dye"
-        },
         "B": {
-            "item": "minecraft:black_dye"
+            "item": "cobblemon:blue_apricorn"
         },
-        "J": {
-            "item": "tmtceic:aluminum_pokeball_frame"
+        "I": {
+            "item": "immersiveengineering:ingot_silver"
+        },
+        "Y":{
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "D":{
+            "item": "cobblemon:black_apricorn"
         },
         "W": {
-            "item": "minecraft:white_dye"
+             "item": "cobblemon:white_apricorn"
         }
     },
     "result": {
-        "item": "cobblemon:moon_ball",
+        "item": "cobblemon:quick_ball",
         "count": 4
     }
 }

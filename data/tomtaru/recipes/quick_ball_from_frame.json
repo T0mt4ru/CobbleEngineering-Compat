@@ -1,25 +1,19 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " Y ",
-        "BID",
-        " W "
+        "B Y",
+        " I ",
+        " B "
     ],
     "key": {
         "B": {
             "item": "cobblemon:blue_apricorn"
         },
         "I": {
-            "item": "immersiveengineering:ingot_silver"
+            "item": "tmtceic:aluminum_pokeball_frame"
         },
         "Y":{
             "item": "cobblemon:yellow_apricorn"
-        },
-        "D":{
-            "item": "cobblemon:black_apricorn"
-        },
-        "W": {
-             "item": "cobblemon:white_apricorn"
         }
     },
     "result": {

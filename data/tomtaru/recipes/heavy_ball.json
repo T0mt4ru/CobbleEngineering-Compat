@@ -1,22 +1,19 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "# B",
-        " L ",
-        " W "
+        " # ",
+        "BIB",
+        " # "
     ],
     "key": {
         "#": {
-            "item": "minecraft:black_dye"
+            "item": "cobblemon:black_apricorn"
         },
-        "B": {
-            "item": "minecraft:blue_dye"
+        "I": {
+            "item": "immersiveengineering:ingot_lead"
         },
-        "L": {
-            "item": "tmtceic:aluminum_pokeball_frame"
-        },
-        "W": {
-            "item": "minecraft:white_dye"
+        "B":{
+            "item": "cobblemon:blue_apricorn"
         }
     },
     "result": {

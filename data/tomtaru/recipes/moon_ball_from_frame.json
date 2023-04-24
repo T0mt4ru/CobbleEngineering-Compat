@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#YB",
+        " J ",
+        " W "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:blue_dye"
+        },
+        "Y": {
+            "item": "minecraft:yellow_dye"
+        },
+        "B": {
+            "item": "minecraft:black_dye"
+        },
+        "J": {
+            "item": "tmtceic:aluminum_pokeball_frame"
+        },
+        "W": {
+            "item": "minecraft:white_dye"
+        }
+    },
+    "result": {
+        "item": "cobblemon:moon_ball",
+        "count": 4
+    }
+}
