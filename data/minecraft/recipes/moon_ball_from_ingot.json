@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " Y ",
+        "BID",
+        " W "
+    ],
+    "key": {
+        "B": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "I": {
+            "item": "immersiveengineering:ingot_silver"
+        },
+        "Y":{
+            "item": "cobblemon:yellow_apricorn"
+        },
+        "D":{
+            "item": "cobblemon:black_apricorn"
+        },
+        "W": {
+             "item": "cobblemon:white_apricorn"
+        }
+    },
+    "result": {
+        "item": "cobblemon:quick_ball",
+        "count": 4
+    }
+}
