@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "BIB",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "cobblemon:black_apricorn"
+        },
+        "I": {
+            "item": "immersiveengineering:ingot_lead"
+        },
+        "B":{
+            "item": "cobblemon:blue_apricorn
+    },
+    "result": {
+        "item": "cobblemon:heavy_ball",
+        "count": 4
+    }
+}
