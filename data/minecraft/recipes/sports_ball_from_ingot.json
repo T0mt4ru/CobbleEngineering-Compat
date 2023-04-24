@@ -13,11 +13,11 @@
             "item": "immersiveengineering:ingot_aluminum"
         },
         "R":{
-            "item": "cobblemon:red_apricorn
+            "item": "cobblemon:red_apricorn"
         }
     },
     "result": {
-        "item": "cobblemon:heavy_ball",
+        "item": "cobblemon:sport_ball",
         "count": 4
     }
 }
