@@ -5,7 +5,7 @@
     "item":"cobblemon:deepslate_dawn_stone_ore"
   },
   "result":{
-    "item":"cobblemon:dawn_stone"
+    "item":"cobblemon:dawn_stone",
     "count":2
   },
   "secondaries":[]

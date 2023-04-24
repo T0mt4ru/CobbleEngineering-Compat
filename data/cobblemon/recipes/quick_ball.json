@@ -1,9 +1,9 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " Y ",
-        "BID",
-        " W "
+        " B ",
+        "YIY",
+        " B "
     ],
     "key": {
         "B": {
@@ -14,16 +14,10 @@
         },
         "Y":{
             "item": "cobblemon:yellow_apricorn"
-        },
-        "D":{
-            "item": "cobblemon:black_apricorn"
-        },
-        "W": {
-             "item": "cobblemon:white_apricorn"
         }
     },
     "result": {
-        "item": "cobblemon:moon_ball",
+        "item": "cobblemon:quick_ball",
         "count": 4
     }
 }
