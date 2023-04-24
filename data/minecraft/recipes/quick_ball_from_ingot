@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " B ",
+        "YIY",
+        " B "
+    ],
+    "key": {
+        "B": {
+            "item": "cobblemon:blue_apricorn"
+        },
+        "I": {
+            "item": "immersiveengineering:ingot_silver"
+        },
+        "Y":{
+            "item": "cobblemon:yellow_apricorn
+        }
+    },
+    "result": {
+        "item": "cobblemon:quick_ball",
+        "count": 4
+    }
+}
