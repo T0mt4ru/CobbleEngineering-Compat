@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " P ",
+        "WIW",
+        " P "
+    ],
+    "key": {
+        "P": {
+            "item": "cobblemon:pink_apricorn"
+        },
+        "I": {
+            "item": "immersiveengineering:ingot_silver"
+        },
+        "W":{
+            "item": "cobblemon:white_apricorn"
+        }
+    },
+    "result": {
+        "item": "cobblemon:heal_ball",
+        "count": 4
+    }
+}
