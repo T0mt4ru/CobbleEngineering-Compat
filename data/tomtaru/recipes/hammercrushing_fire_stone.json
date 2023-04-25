@@ -1,0 +1,10 @@
+{
+    "type":"immersiveengineering:hammer_crushing",
+    "input":{
+        "item":"cobblemon:fire_stone"
+    },
+    "result":{
+        "item":"minecraft:blaze_powder",
+        "count":3
+    }
+}

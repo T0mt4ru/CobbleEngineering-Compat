@@ -1,0 +1,10 @@
+{
+    "type":"immersiveengineering:hammer_crushing",
+    "input":{
+        "item":"cobblemon:water_stone"
+    },
+    "result":{
+        "item":"minecraft:ghast_tear",
+        "count":1
+    }
+}
