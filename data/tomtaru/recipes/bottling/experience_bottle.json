@@ -2,7 +2,7 @@
     "type":"immersiveengineering:bottling_machine",
     "fluid":{
         "amount":125,
-        "fluid":"tmtceic:liquid_experience"
+        "tag":"tmtceic:liquid_experience"
     },
     "inputs":[
         {
