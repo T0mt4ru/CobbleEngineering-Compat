@@ -1,0 +1,18 @@
+{
+    "conditions": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "farmersdelight"
+      }
+    ],
+    "type": "immersiveengineering:metal_press",
+    "mold": "immersiveengineering:mold_wire",
+    "result": {
+      "item": "farmersdelight:raw_pasta",
+      "count": 2
+    },
+    "input": {
+      "item": "farmrsdelight:wheat_dough"
+    },
+    "energy": 3200
+  }

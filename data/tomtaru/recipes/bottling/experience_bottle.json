@@ -1,0 +1,17 @@
+{
+    "type":"immersiveengineering:bottling_machine",
+    "fluid":{
+        "amount":125,
+        "fluid":"tmtceic:liquid_experience"
+    },
+    "inputs":[
+        {
+            "item":"minecraft:glass_bottle"
+        }
+    ],
+    "results":[
+        {
+            "item":"minecraft:experience_bottle"
+        }
+    ]
+}

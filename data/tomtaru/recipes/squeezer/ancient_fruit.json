@@ -1,0 +1,17 @@
+{
+    "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+    "type":"immersiveengineering:squeezer",
+    "energy":6400,
+    "fluid":{
+        "amount":375,
+        "fluid":"tmtceic:liquid_experience"
+    },
+    "input":{
+        "item":"quark:ancient_fruit"
+    }
+}
