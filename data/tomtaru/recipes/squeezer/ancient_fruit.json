@@ -9,7 +9,7 @@
     "energy":6400,
     "fluid":{
         "amount":375,
-        "fluid":"tmtceic:liquid_experience"
+        "fluid":"tmtceic:ancient_juice"
     },
     "input":{
         "item":"quark:ancient_fruit"
