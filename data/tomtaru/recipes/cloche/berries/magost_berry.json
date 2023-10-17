@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:magost_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:magost_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:magost_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

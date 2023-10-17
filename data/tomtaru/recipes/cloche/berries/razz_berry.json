@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:razz_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:razz_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:razz_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

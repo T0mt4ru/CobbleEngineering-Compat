@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:cheri_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:cheri_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:cheri_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

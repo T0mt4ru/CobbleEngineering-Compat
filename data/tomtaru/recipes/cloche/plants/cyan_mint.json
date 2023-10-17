@@ -1,0 +1,28 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:cyan_mint_seeds"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:cyan_mint"
+    },
+    "results":
+    [
+        {
+            "count":2,
+            "item":"cobblemon:cyan_mint_leaf"
+        },
+        {
+            "count":1,
+            "item":"cobblemon:cyan_mint_seeds"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":800
+}

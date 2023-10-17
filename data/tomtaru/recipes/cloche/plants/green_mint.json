@@ -1,0 +1,28 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:green_mint_seeds"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:green_mint"
+    },
+    "results":
+    [
+        {
+            "count":2,
+            "item":"cobblemon:green_mint_leaf"
+        },
+        {
+            "count":1,
+            "item":"cobblemon:green_mint_seeds"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":800
+}

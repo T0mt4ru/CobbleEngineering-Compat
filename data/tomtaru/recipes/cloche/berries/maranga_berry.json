@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:maranga_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:maranga_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:maranga_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

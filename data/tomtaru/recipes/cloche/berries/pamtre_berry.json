@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:pamtre_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:pamtre_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:pamtre_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

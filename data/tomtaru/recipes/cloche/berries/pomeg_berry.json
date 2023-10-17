@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:pomeg_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:pomeg_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:pomeg_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

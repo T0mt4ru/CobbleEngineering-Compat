@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:watmel_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:watmel_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:watmel_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

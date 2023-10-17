@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:tamato_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:tamato_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:tamato_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

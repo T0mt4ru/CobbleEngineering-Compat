@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:roseli_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:roseli_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:roseli_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

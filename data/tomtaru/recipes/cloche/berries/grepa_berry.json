@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:grepa_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:grepa_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:grepa_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

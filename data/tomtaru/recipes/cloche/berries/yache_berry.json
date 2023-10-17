@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:yache_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:yache_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:yache_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

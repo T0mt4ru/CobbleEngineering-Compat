@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:enigma_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:enigma_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:enigma_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

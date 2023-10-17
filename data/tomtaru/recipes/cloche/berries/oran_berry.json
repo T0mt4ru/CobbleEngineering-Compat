@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:oran_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:oran_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:oran_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

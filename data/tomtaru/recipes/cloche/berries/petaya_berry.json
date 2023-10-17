@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:petaya_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:petaya_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:petaya_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:rabuta_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:rabuta_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:rabuta_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:aguav_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:aguav_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:aguav_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

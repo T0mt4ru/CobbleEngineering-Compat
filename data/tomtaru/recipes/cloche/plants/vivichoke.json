@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:vivichoke_seeds"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:vivichoke_seeds"
+    },
+    "results":
+    [
+        {
+            "count":1,
+            "item":"cobblemon:vivichoke"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":800
+}

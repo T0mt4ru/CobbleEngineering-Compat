@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:custap_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:custap_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:custap_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

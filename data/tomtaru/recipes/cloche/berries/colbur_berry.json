@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:colbur_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:colbur_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:colbur_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

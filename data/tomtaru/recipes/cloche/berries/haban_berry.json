@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:haban_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:haban_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:haban_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:rindo_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:rindo_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:rindo_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

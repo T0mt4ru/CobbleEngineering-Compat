@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:kelpsy_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:kelpsy_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:kelpsy_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

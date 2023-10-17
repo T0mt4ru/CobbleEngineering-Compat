@@ -1,0 +1,28 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:revival_herb"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:revival_herb"
+    },
+    "results":
+    [
+        {
+            "count":4,
+            "item":"cobblemon:revival_herb"
+        },
+        {
+            "count":1,
+            "item":"cobblemon:pep_up_flower"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":800
+}

@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:kasib_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:kasib_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:kasib_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

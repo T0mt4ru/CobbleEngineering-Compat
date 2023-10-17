@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:leppa_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:leppa_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:leppa_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:cornn_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:cornn_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:cornn_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

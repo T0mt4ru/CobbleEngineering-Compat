@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:rowap_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:rowap_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:rowap_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

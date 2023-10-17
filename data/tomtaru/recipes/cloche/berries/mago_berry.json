@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:mago_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:mago_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:mago_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

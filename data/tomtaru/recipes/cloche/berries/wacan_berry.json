@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:wacan_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:wacan_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:wacan_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}

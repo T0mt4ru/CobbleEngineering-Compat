@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:lum_berry"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:lum_berry"
+    },
+    "results":
+    [
+        {
+            "count":5,
+            "item":"cobblemon:lum_berry"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:dirt"
+    },
+    "time":6000
+}
