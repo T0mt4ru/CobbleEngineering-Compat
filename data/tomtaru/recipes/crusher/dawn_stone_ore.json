@@ -4,8 +4,12 @@
   "input":{
     "item":"cobblemon:dawn_stone_ore"
   },
-  "result":{
-    "item":"cobblemon:dawn_stone",
+  "result":
+  {
+    "base_ingredient":
+    {
+      "item":"cobblemon:dawn_stone"
+    },
     "count":2
   },
   "secondaries":[]
