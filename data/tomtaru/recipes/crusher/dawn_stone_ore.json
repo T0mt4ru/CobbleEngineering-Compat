@@ -1,7 +1,8 @@
 {
   "type":"immersiveengineering:crusher",
   "energy":6000,
-  "input":{
+  "input":
+  {
     "item":"cobblemon:dawn_stone_ore"
   },
   "result":
