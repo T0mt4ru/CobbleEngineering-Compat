@@ -1,0 +1,24 @@
+{
+    "type": "immersiveengineering:cloche",
+    "input":
+    {
+        "item":"cobblemon:medicinal_leek"
+    },
+    "render":
+    {
+        "type":"crop",
+        "block":"cobblemon:medicinal_leek"
+    },
+    "results":
+    [
+        {
+            "count":2,
+            "item":"cobblemon:medicinal_leek"
+        }
+    ],
+    "soil":
+    {
+        "item":"minecraft:water_bucket"
+    },
+    "time":1600
+}
