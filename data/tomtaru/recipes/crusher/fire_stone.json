@@ -1,10 +1,12 @@
 {
   "type":"immersiveengineering:crusher",
   "energy":6000,
-  "input":{
+  "input":
+  {
     "item":"cobblemon:fire_stone"
   },
-  "result":{
+  "result":
+  {
     "base_ingredient":{
       "item":"minecraft:blaze_powder"
     },
