@@ -1,10 +1,12 @@
 {
   "type":"immersiveengineering:crusher",
   "energy":6000,
-  "input":{
+  "input":
+  {
     "item":"cobblemon:fire_stone_ore"
   },
-  "result":{
+  "result":
+  {
     "item":"cobblemon:fire_stone",
     "count":2
   },
