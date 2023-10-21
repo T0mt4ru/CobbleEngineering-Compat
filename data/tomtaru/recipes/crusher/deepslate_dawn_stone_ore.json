@@ -7,11 +7,8 @@
   },
   "result":
   {
-    "base_ingredient":
-    {
-      "item":"cobblemon:dawn_stone"
-    },
-    "count":2
+      "item":"cobblemon:dawn_stone",
+      "count":2
   },
   "secondaries":[]
 }
