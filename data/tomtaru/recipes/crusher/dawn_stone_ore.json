@@ -2,7 +2,7 @@
   "type":"immersiveengineering:crusher",
   "energy":6000,
   "input":{
-    "item":"cobblemon:dawn_stone_ore"
+    "tag":"forge:ores/dawn_stone"
   },
   "result":{
     "base_ingredient":{
