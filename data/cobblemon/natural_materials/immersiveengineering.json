@@ -1,0 +1,11 @@
+[
+    {
+        "content": 1,
+        "item": "immersiveengineering:seed"
+    },
+    {
+        "content":64,
+        "item": "immersiveengineering:plantoil_bucket",
+        "returnItem": "minecraft:bucket"
+    }
+]
