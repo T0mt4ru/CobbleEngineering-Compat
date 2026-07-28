@@ -1,0 +1,28 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:white_apricorn_seed"
+  },
+  "render": {
+    "type": "immersiveengineering:generic",
+    "block": "cobblemon:white_apricorn_sapling"
+  },
+  "results": [
+    {
+      "id": "cobblemon:white_apricorn"
+    },
+    {
+      "chance": 0.1,
+      "output": {
+        "id": "cobblemon:white_apricorn_seed"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 3200
+}

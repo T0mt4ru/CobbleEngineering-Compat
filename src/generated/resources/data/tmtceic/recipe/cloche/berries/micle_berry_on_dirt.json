@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:micle_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:micle_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:micle_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:micle_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

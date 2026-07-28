@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#tmtceic:status_cures/antidote",
+    "#tmtceic:status_cures/burn_heal",
+    "#tmtceic:status_cures/ice_heal",
+    "#tmtceic:status_cures/paralyze_heal",
+    "#tmtceic:status_cures/awakening"
+  ]
+}

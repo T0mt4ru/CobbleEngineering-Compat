@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:payapa_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:payapa_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:payapa_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:payapa_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

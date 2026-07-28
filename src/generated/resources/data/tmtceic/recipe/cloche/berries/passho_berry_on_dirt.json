@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:passho_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:passho_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:passho_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:passho_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

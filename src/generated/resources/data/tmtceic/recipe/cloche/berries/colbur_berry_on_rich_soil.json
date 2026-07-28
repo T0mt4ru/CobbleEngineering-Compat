@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:colbur_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:colbur_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:colbur_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:colbur_berry"
+      }
+    }
+  ],
+  "soil": {
+    "tag": "tmtceic:compat/rich_soil"
+  },
+  "time": 800
+}

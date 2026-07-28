@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:mixer",
+  "energy": 3200,
+  "fluid": {
+    "amount": 1000,
+    "tag": "minecraft:water"
+  },
+  "inputs": [
+    {
+      "item": "cobblemon:pecha_berry"
+    }
+  ],
+  "result": {
+    "amount": 1000,
+    "id": "tmtceic:antidote"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:lava"
+  },
+  "input": {
+    "item": "cobblemon:tumblestone"
+  },
+  "render": {
+    "type": "immersiveengineering:generic",
+    "block": "cobblemon:tumblestone_cluster"
+  },
+  "results": [
+    {
+      "id": "cobblemon:small_budding_tumblestone"
+    },
+    {
+      "chance": 0.75,
+      "output": {
+        "id": "cobblemon:medium_budding_tumblestone"
+      }
+    },
+    {
+      "chance": 0.5,
+      "output": {
+        "id": "cobblemon:large_budding_tumblestone"
+      }
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:tumblestone_cluster"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:magma_block"
+  },
+  "time": 3200
+}

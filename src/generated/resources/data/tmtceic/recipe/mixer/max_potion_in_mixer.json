@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:mixer",
+  "energy": 3200,
+  "fluid": {
+    "amount": 1000,
+    "tag": "tmtceic:potions/hyper_potion"
+  },
+  "inputs": [
+    {
+      "item": "cobblemon:vivichoke"
+    }
+  ],
+  "result": {
+    "amount": 1000,
+    "id": "tmtceic:max_potion"
+  }
+}

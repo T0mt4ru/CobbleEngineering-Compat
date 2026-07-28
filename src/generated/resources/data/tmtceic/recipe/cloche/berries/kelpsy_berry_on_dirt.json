@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:kelpsy_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:kelpsy_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:kelpsy_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:kelpsy_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

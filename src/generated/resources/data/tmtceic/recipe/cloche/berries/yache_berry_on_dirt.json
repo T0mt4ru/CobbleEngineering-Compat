@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:yache_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:yache_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:yache_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:yache_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:yellow_apricorn_seed"
+  },
+  "render": {
+    "type": "immersiveengineering:generic",
+    "block": "cobblemon:yellow_apricorn_sapling"
+  },
+  "results": [
+    {
+      "id": "cobblemon:yellow_apricorn"
+    },
+    {
+      "chance": 0.1,
+      "output": {
+        "id": "cobblemon:yellow_apricorn_seed"
+      }
+    }
+  ],
+  "soil": {
+    "tag": "tmtceic:compat/rich_soil"
+  },
+  "time": 1600
+}

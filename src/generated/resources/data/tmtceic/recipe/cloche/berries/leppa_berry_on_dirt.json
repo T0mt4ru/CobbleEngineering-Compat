@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:leppa_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:leppa_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:leppa_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:leppa_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

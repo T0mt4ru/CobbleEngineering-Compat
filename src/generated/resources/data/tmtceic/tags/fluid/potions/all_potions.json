@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#tmtceic:potions/potion",
+    "#tmtceic:potions/super_potion",
+    "#tmtceic:potions/hyper_potion",
+    "#tmtceic:potions/max_potion",
+    "#tmtceic:restoratives/full_restore"
+  ]
+}

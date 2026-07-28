@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:aguav_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:aguav_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:aguav_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:aguav_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

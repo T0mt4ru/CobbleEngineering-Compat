@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:chilan_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:chilan_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:chilan_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:chilan_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

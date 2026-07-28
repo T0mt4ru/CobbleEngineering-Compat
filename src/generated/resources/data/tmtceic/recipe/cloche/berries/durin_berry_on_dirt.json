@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:durin_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:durin_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:durin_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:durin_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

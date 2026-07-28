@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:mixer",
+  "energy": 3200,
+  "fluid": {
+    "amount": 1000,
+    "tag": "tmtceic:potions/potion"
+  },
+  "inputs": [
+    {
+      "tag": "cobblemon:super_potion_ingredients"
+    }
+  ],
+  "result": {
+    "amount": 1000,
+    "id": "tmtceic:super_potion"
+  }
+}

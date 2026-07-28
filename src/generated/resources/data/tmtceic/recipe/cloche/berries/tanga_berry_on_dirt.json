@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:tanga_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:tanga_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:tanga_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:tanga_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

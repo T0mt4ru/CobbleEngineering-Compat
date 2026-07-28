@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:red_mint_seeds"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:red_mint"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:red_mint_leaf"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:red_mint_seeds"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

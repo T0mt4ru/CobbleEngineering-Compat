@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:rowap_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:rowap_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:rowap_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:rowap_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

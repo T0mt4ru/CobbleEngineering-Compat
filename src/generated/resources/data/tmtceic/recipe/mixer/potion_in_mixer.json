@@ -1,0 +1,17 @@
+{
+  "type": "immersiveengineering:mixer",
+  "energy": 3200,
+  "fluid": {
+    "amount": 1000,
+    "tag": "tmtceic:bases/medicinal_brew"
+  },
+  "inputs": [
+    {
+      "item": "cobblemon:oran_berry"
+    }
+  ],
+  "result": {
+    "amount": 1000,
+    "id": "tmtceic:potion"
+  }
+}

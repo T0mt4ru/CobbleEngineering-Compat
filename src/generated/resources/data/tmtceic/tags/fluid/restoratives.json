@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#tmtceic:potions/all_potions",
+    "#tmtceic:status_cures/all_cures",
+    "#tmtceic:pp_restores/all_pp_restores",
+    "#tmtceic:bases/medicinal_brew"
+  ]
+}

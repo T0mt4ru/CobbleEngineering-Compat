@@ -1,0 +1,25 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:revival_herb"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:revival_herb"
+  },
+  "results": [
+    {
+      "id": "cobblemon:pep_up_flower"
+    },
+    {
+      "id": "cobblemon:revival_herb"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

@@ -1,0 +1,28 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:vivichoke_seeds"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:vivichoke_seeds"
+  },
+  "results": [
+    {
+      "id": "cobblemon:vivichoke"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:vivichoke_seeds"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

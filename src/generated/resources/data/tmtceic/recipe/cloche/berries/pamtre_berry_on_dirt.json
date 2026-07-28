@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:pamtre_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:pamtre_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:pamtre_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:pamtre_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}

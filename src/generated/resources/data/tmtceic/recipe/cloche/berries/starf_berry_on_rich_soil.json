@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:starf_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:starf_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:starf_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:starf_berry"
+      }
+    }
+  ],
+  "soil": {
+    "tag": "tmtceic:compat/rich_soil"
+  },
+  "time": 800
+}

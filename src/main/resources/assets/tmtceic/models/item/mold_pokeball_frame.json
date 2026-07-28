@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tmtceic:item/mold_pokeball_frame"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:mago_berry"
+  },
+  "render": {
+    "type": "immersiveengineering:crop",
+    "block": "cobblemon:mago_berry"
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "cobblemon:mago_berry"
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "cobblemon:mago_berry"
+      }
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 1600
+}
