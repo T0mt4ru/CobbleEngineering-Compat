@@ -1,0 +1,22 @@
+{
+  "type": "immersiveengineering:cloche",
+  "fluid": {
+    "tag": "c:water"
+  },
+  "input": {
+    "item": "cobblemon:big_root"
+  },
+  "render": {
+    "type": "immersiveengineering:generic",
+    "block": "cobblemon:big_root"
+  },
+  "results": [
+    {
+      "id": "cobblemon:big_root"
+    }
+  ],
+  "soil": {
+    "tag": "c:stones"
+  },
+  "time": 800
+}

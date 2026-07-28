@@ -28,11 +28,23 @@ public class ClocheRecipes {
     private static final Ingredient soilDirt = Ingredient.of(Items.DIRT);
     private static final Ingredient soilRich = Ingredient.of(TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "compat/rich_soil")));
     private static final Ingredient soilMagma = Ingredient.of(Items.MAGMA_BLOCK);
+    private static final Ingredient soilStone = Ingredient.of(TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "stones")));
+    private static final Ingredient soilWater = Ingredient.of(Items.WATER_BUCKET);
 
     private static final int timeStandard = 1600;
     private static final int timeHalved = timeStandard / 2;
     private static final int timeDoubled = timeStandard * 2;
+
     private static final float chanceGuaranteed = 1.0f;
+    private static final float chanceHigh = 0.75f;
+    private static final float chanceMedium = 0.5f;
+    private static final float chanceLow = 0.25f;
+
+    public enum RenderType
+    {
+        GENERIC,
+        CROP
+    }
 
     // The "Berrydex", list of all berries in cobblemon by name only, the rest is standard.
     private static final String[] BERRYDEX = {
@@ -45,7 +57,7 @@ public class ClocheRecipes {
             "coba", "payapa", "tanga", "charti", "kasib", "haban", "colbur", "babiri",
             "chilan", "liechi", "ganlon", "salac", "petaya", "apicot", "lansat",
             "starf", "enigma", "micle", "custap", "jaboca", "rowap", "roseli",
-            "kee", "maranga", "hopo", "touga"
+            "kee", "maranga", "hopo", "touga", "eggant"
     };
 
     // The "Mintdex", list of all coloured mints in cobblemon by colour only, the rest is standard.
@@ -69,7 +81,7 @@ public class ClocheRecipes {
             String cropItemID,
             String seedItemID,
             String renderBlockID,
-            String recipeName,
+            RenderType renderType,
             List<StackWithChance> outputs,
             int time,
             Ingredient soilID,
@@ -83,16 +95,16 @@ public class ClocheRecipes {
                     "vivichoke",
                     "vivichoke_seeds",
                     "vivichoke_seeds",
-                    "vivichoke",
+                    RenderType.CROP,
                     List.of(
                             new StackWithChance(new TagOutput(
                                     BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("cobblemon", "vivichoke")), 1),
                                     chanceGuaranteed),
                             new StackWithChance(new TagOutput(
                                     BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("cobblemon","vivichoke_seeds")), 1),
-                                    0.25f)
+                                    chanceLow)
                     ),
-                    timeStandard,
+                    timeDoubled,
                     soilDirt, "dirt",
                     true
             ),
@@ -101,7 +113,7 @@ public class ClocheRecipes {
                     "pep_up_flower",
                     "revival_herb",
                     "revival_herb",
-                    "revival_herb",
+                    RenderType.CROP,
                     List.of(
                             new StackWithChance(new TagOutput(
                                     BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("cobblemon", "pep_up_flower")), 1),
@@ -113,6 +125,88 @@ public class ClocheRecipes {
                     timeStandard,
                     soilDirt, "dirt",
                     true
+            ),
+            new MiscCrop(
+                    "cobblemon",
+                    "hearty_grains",
+                    "hearty_grains",
+                    "hearty_grains",
+                    RenderType.CROP,
+                    List.of(
+                            new StackWithChance(new TagOutput(
+                                    BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("cobblemon", "hearty_grains")), 3),
+                                    chanceGuaranteed),
+                            new StackWithChance( new TagOutput(
+                                    BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("cobblemon", "hearty_grains")), 1),
+                                    chanceLow)
+                    ),
+                    timeStandard,
+                    soilDirt, "dirt",
+                    true
+            ),
+            new MiscCrop(
+                    "cobblemon",
+                    "galarica_nuts",
+                    "galarica_nuts",
+                    "galarica_nut_bush",
+                    RenderType.CROP,
+                    List.of(
+                            new StackWithChance(new TagOutput(
+                                    BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("cobblemon", "galarica_nuts")), 1),
+                                    chanceGuaranteed)
+                    ),
+                    timeStandard,
+                    soilDirt, "dirt",
+                    true
+            ),
+            new MiscCrop(
+                    "cobblemon",
+                    "big_root",
+                    "big_root",
+                    "big_root",
+                    RenderType.GENERIC,
+                    List.of(
+                            new StackWithChance(new TagOutput(
+                                    BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("cobblemon", "big_root")), 1),
+                                    chanceGuaranteed)
+                    ),
+                    timeHalved,
+                    soilStone, "stone",
+                    false
+            ),
+            new MiscCrop(
+                    "cobblemon",
+                    "energy_root",
+                    "energy_root",
+                    "energy_root",
+                    RenderType.GENERIC,
+                    List.of(
+                            new StackWithChance(new TagOutput(
+                                    BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("cobblemon", "energy_root")), 1),
+                                    chanceGuaranteed)
+                    ),
+                    timeHalved,
+                    soilStone, "stone",
+                    false
+            ),
+            new MiscCrop(
+                    "cobblemon",
+                    "medicinal_leek",
+                    "medicinal_leek",
+                    "medicinal_leek",
+                    RenderType.CROP,
+                    List.of(
+                            new StackWithChance(new TagOutput(
+                                    BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("cobblemon", "medicinal_leek")), 4),
+                                    chanceGuaranteed),
+                            new StackWithChance(new TagOutput(
+                                    BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("cobblemon", "medicinal_leek")), 1),
+                                    chanceLow)
+
+                    ),
+                    timeStandard,
+                    soilWater, "water",
+                    false
             )
     );
 
@@ -130,10 +224,17 @@ public class ClocheRecipes {
                 crop.soilID(),
                 crop.time(),
                 fluidWater,
-                new ClocheRenderFunctions.RenderFunctionCrop(renderBlock)
+                switch (crop.renderType) {
+                    case CROP ->
+                        new ClocheRenderFunctions.RenderFunctionCrop(renderBlock);
+
+                    case GENERIC ->
+                        new ClocheRenderFunctions.RenderFunctionGeneric(renderBlock);
+
+                }
         );
         output.accept(
-                ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "cloche/" + recipeGroup + "/" + crop.recipeName() + "_on_"+ crop.soilLabel()),
+                ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "cloche/" + recipeGroup + "/" + crop.cropItemID() + "_on_"+ crop.soilLabel()),
                 dirtRecipe, null
         );
 
@@ -144,10 +245,17 @@ public class ClocheRecipes {
                     soilRich,
                     crop.time() / 2,
                     fluidWater,
-                    new ClocheRenderFunctions.RenderFunctionCrop(renderBlock)
+                    switch (crop.renderType) {
+                        case CROP ->
+                                new ClocheRenderFunctions.RenderFunctionCrop(renderBlock);
+
+                        case GENERIC ->
+                                new ClocheRenderFunctions.RenderFunctionGeneric(renderBlock);
+
+                    }
             );
             farmersdelightOutput.accept(
-                    ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "cloche/" + recipeGroup + "/" + crop.recipeName() + "_on_rich_soil"),
+                    ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "cloche/" + recipeGroup + "/" + crop.cropItemID() + "_on_rich_soil"),
                     richRecipe, null
             );
         }
@@ -168,7 +276,7 @@ public class ClocheRecipes {
 
             List<StackWithChance> outputs = List.of(
                     new StackWithChance(new TagOutput(berryItem, 3), chanceGuaranteed),
-                    new StackWithChance(new TagOutput(berryItem, 1), 0.25F)
+                    new StackWithChance(new TagOutput(berryItem, 1), chanceLow)
             );
 
             ClocheRecipe recipe = new ClocheRecipe(
@@ -208,7 +316,7 @@ public class ClocheRecipes {
 
             List<StackWithChance> outputs = List.of(
                     new StackWithChance(new TagOutput(leafItem, 3), chanceGuaranteed),
-                    new StackWithChance(new TagOutput(seedItem, 1), 0.25F)
+                    new StackWithChance(new TagOutput(seedItem, 1), chanceLow)
             );
 
             ClocheRecipe recipe = new ClocheRecipe(
@@ -253,9 +361,9 @@ public class ClocheRecipes {
 
             List<StackWithChance> outputs = List.of(
                     new StackWithChance(new TagOutput(smallBudItem, 1), chanceGuaranteed),
-                    new StackWithChance(new TagOutput(mediumBudItem, 1), 0.75F),
-                    new StackWithChance(new TagOutput(largeBudItem, 1), 0.50F),
-                    new StackWithChance(new TagOutput(clusterItem, 1), 0.25F)
+                    new StackWithChance(new TagOutput(mediumBudItem, 1), chanceHigh),
+                    new StackWithChance(new TagOutput(largeBudItem, 1), chanceMedium),
+                    new StackWithChance(new TagOutput(clusterItem, 1), chanceLow)
             );
 
             ClocheRecipe recipe = new ClocheRecipe(

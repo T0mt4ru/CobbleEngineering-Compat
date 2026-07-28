@@ -4,25 +4,26 @@
     "tag": "c:water"
   },
   "input": {
-    "item": "cobblemon:vivichoke_seeds"
+    "item": "cobblemon:medicinal_leek"
   },
   "render": {
     "type": "immersiveengineering:crop",
-    "block": "cobblemon:vivichoke_seeds"
+    "block": "cobblemon:medicinal_leek"
   },
   "results": [
     {
-      "id": "cobblemon:vivichoke"
+      "count": 4,
+      "id": "cobblemon:medicinal_leek"
     },
     {
       "chance": 0.25,
       "output": {
-        "id": "cobblemon:vivichoke_seeds"
+        "id": "cobblemon:medicinal_leek"
       }
     }
   ],
   "soil": {
-    "item": "minecraft:dirt"
+    "item": "minecraft:water_bucket"
   },
-  "time": 3200
+  "time": 1600
 }

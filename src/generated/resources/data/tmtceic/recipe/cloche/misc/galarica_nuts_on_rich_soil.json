@@ -10,25 +10,19 @@
     "tag": "c:water"
   },
   "input": {
-    "item": "cobblemon:vivichoke_seeds"
+    "item": "cobblemon:galarica_nuts"
   },
   "render": {
     "type": "immersiveengineering:crop",
-    "block": "cobblemon:vivichoke_seeds"
+    "block": "cobblemon:galarica_nut_bush"
   },
   "results": [
     {
-      "id": "cobblemon:vivichoke"
-    },
-    {
-      "chance": 0.25,
-      "output": {
-        "id": "cobblemon:vivichoke_seeds"
-      }
+      "id": "cobblemon:galarica_nuts"
     }
   ],
   "soil": {
     "tag": "tmtceic:compat/rich_soil"
   },
-  "time": 1600
+  "time": 800
 }

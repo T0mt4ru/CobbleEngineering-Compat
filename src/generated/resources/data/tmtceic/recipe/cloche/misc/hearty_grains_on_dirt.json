@@ -4,25 +4,26 @@
     "tag": "c:water"
   },
   "input": {
-    "item": "cobblemon:vivichoke_seeds"
+    "item": "cobblemon:hearty_grains"
   },
   "render": {
     "type": "immersiveengineering:crop",
-    "block": "cobblemon:vivichoke_seeds"
+    "block": "cobblemon:hearty_grains"
   },
   "results": [
     {
-      "id": "cobblemon:vivichoke"
+      "count": 3,
+      "id": "cobblemon:hearty_grains"
     },
     {
       "chance": 0.25,
       "output": {
-        "id": "cobblemon:vivichoke_seeds"
+        "id": "cobblemon:hearty_grains"
       }
     }
   ],
   "soil": {
     "item": "minecraft:dirt"
   },
-  "time": 3200
+  "time": 1600
 }
