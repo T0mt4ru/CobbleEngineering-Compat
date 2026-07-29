@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-29T01:50:46.4593383	Recipes
+// 1.21.1	2026-07-29T20:24:00.9703966	Recipes
 9a6751fd640601b896647c062cfe911fff86245a data/tmtceic/recipe/bottling/antidote_in_bottling_machine.json
 f605e55f486034c43e8fdd0f848c2b5ba77a7850 data/tmtceic/recipe/bottling/awakening_in_bottling_machine.json
 075e1fa1ca020d126990b4f31ec99d38c92ca8d9 data/tmtceic/recipe/bottling/burn_heal_in_bottling_machine.json
@@ -213,3 +213,10 @@ e8bd9a167a3e5c3604d3757fdd0a118b98ac5671 data/tmtceic/recipe/mixer/max_elixir_in
 30bbbc928b6b0cdc6d4e32a9d2f887e415a2ae8c data/tmtceic/recipe/mixer/potion_in_mixer.json
 ac0475dc3f19c0be93092f2d6577d11f612e4991 data/tmtceic/recipe/mixer/super_potion_in_mixer.json
 e1f535ea1c6a9315538b631269b225c88b36985d data/tmtceic/recipe/mixer/throat_spray_in_mixer.json
+f8c1c51c0859f8ca6a5310685bf858cbf04fa8ef data/tmtceic/recipe/squeezer/black_aprigel.json
+3d82c437d13c17118d0a18f661c949097fb44ef7 data/tmtceic/recipe/squeezer/blue_aprigel.json
+fca71a03e628572aa0af52f4578924378d5d749c data/tmtceic/recipe/squeezer/green_aprigel.json
+1bd84d79e079b515fd0f304735a8455583626f18 data/tmtceic/recipe/squeezer/pink_aprigel.json
+82b5ba630a12e496a6c6389d50a18d1853a29137 data/tmtceic/recipe/squeezer/red_aprigel.json
+14ad8e93637d88b5c5d929437ccdee021843cf66 data/tmtceic/recipe/squeezer/white_aprigel.json
+0249ef2766d141dfa872f4408ba9d9278462cecc data/tmtceic/recipe/squeezer/yellow_aprigel.json

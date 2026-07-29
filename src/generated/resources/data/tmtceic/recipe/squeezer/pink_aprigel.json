@@ -1,0 +1,14 @@
+{
+  "type": "immersiveengineering:squeezer",
+  "energy": 3200,
+  "fluid": {
+    "amount": 250,
+    "id": "tmtceic:pink_aprigel"
+  },
+  "input": {
+    "item": "cobblemon:pink_apricorn"
+  },
+  "result": {
+    "item": "minecraft:pink_dye"
+  }
+}

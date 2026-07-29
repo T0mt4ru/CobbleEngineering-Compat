@@ -11,6 +11,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 
 
 import java.util.List;
@@ -21,10 +22,22 @@ import static net.minecraft.world.item.crafting.Ingredient.of;
 
 public class MetalPressRecipes {
 
+    public static final int energyStandard = 3200;
+
+    public static final IngredientWithSize frameAluminum = new IngredientWithSize(Ingredient.of(ModItems.ALUMINUM_POKEBALL_FRAME.get()), 1);
+    public static final IngredientWithSize frameNetherite = new IngredientWithSize(Ingredient.of(ModItems.NETHERITE_POKEBALL_FRAME.get()), 1);
+    public static final Item moldPokeball = ModItems.MOLD_POKEBALL_FRAME.get();
+
+    private record TMTPressing(
+            IngredientWithSize input,
+            Item mold,
+            TagOutput output,
+            int energy,
+            String recipeName
+    ) {}
     public static void build(RecipeOutput output) {
 
-        var energyStandard = 3200;
-//        var moldAluminum = ModItems.ALUMINUM_POKEBALL_FRAME.get();
+
 
         List<TMTPressing> pressRecipes = List.of(
                 //new TMTPressing(
@@ -52,11 +65,5 @@ public class MetalPressRecipes {
         output.accept(id, recipe, null);
     }
 
-    private record TMTPressing(
-            IngredientWithSize input,
-            Item mold,
-            TagOutput output,
-            int energy,
-            String recipeName
-    ) {}
+
 }

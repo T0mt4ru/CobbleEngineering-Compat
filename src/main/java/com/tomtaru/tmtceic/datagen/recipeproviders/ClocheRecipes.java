@@ -263,8 +263,6 @@ public class ClocheRecipes {
 
     public static void build(RecipeOutput output) {
 
-
-
         RecipeOutput farmersdelightOutput = output.withConditions(new ModLoadedCondition("farmersdelight"));
 
         // for-loop dealing with Berrydex.

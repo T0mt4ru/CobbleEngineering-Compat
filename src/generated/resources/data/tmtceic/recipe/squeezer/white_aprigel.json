@@ -1,0 +1,14 @@
+{
+  "type": "immersiveengineering:squeezer",
+  "energy": 3200,
+  "fluid": {
+    "amount": 250,
+    "id": "tmtceic:white_aprigel"
+  },
+  "input": {
+    "item": "cobblemon:white_apricorn"
+  },
+  "result": {
+    "item": "minecraft:white_dye"
+  }
+}

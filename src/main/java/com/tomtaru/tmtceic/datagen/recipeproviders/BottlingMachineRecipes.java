@@ -20,103 +20,112 @@ import java.util.List;
 
 public class BottlingMachineRecipes {
 
+    public static final IngredientWithSize containerBottle = new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1);
+
+    private record TMTBottling(
+            IngredientWithSize input,
+            SizedFluidIngredient fluidInput,
+            List<TagOutput> outputs,
+            String recipeName
+    ) {}
+
     public static void build(RecipeOutput output) {
 
         var fluidAmount = 250;
 
         List<TMTBottling> bottlingRecipes = List.of(
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "potion")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.POTION)),
                         "potion"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "super_potion")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.SUPER_POTION)),
                         "super_potion"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "hyper_potion")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.HYPER_POTION)),
                         "hyper_potion"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "max_potion")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.MAX_POTION)),
                         "max_potion"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "ether")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.ETHER)),
                         "ether"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "max_ether")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.MAX_ETHER)),
                         "max_ether"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "elixir")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.ELIXIR)),
                         "elixir"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "max_elixir")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.MAX_ELIXIR)),
                         "max_elixir"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "antidote")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.ANTIDOTE)),
                         "antidote"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "awakening")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.AWAKENING)),
                         "awakening"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "paralyze_heal")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.PARALYZE_HEAL)),
                         "paralyze_heal"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "burn_heal")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.BURN_HEAL)),
                         "burn_heal"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "ice_heal")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.ICE_HEAL)),
                         "ice_heal"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "full_heal")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.FULL_HEAL)),
                         "full_heal"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "full_restore")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.FULL_RESTORE)),
                         "full_restore"
                 ),
                 new TMTBottling(
-                        new IngredientWithSize(Ingredient.of(Items.GLASS_BOTTLE), 1),
+                        containerBottle,
                         SizedFluidIngredient.of(BuiltInRegistries.FLUID.get(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "throat_spray")), fluidAmount),
                         List.of(new TagOutput(CobblemonItems.THROAT_SPRAY)),
                         "throat_spray"
@@ -139,11 +148,4 @@ public class BottlingMachineRecipes {
         ResourceLocation id = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "bottling/" + data.recipeName() + "_in_bottling_machine");
         output.accept(id, recipe, null);
     }
-
-    private record TMTBottling(
-            IngredientWithSize input,
-            SizedFluidIngredient fluidInput,
-            List<TagOutput> outputs,
-            String recipeName
-    ) {}
 }
