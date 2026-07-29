@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-29T20:24:00.9703966	Recipes
+// 1.21.1	2026-07-30T00:37:46.031001	Recipes
 9a6751fd640601b896647c062cfe911fff86245a data/tmtceic/recipe/bottling/antidote_in_bottling_machine.json
 f605e55f486034c43e8fdd0f848c2b5ba77a7850 data/tmtceic/recipe/bottling/awakening_in_bottling_machine.json
 075e1fa1ca020d126990b4f31ec99d38c92ca8d9 data/tmtceic/recipe/bottling/burn_heal_in_bottling_machine.json
@@ -195,6 +195,13 @@ c14637ccfecf7aa9283a40034ae27a336bb851e4 data/tmtceic/recipe/cloche/misc/vivicho
 3cfaf8fae3d718f9d72f184b2db03eae85b74652 data/tmtceic/recipe/cloche/tumblestones/black_tumblestone_on_magma.json
 90d6b3bddfd107292d8c3415b22c5f17a416aaf0 data/tmtceic/recipe/cloche/tumblestones/sky_tumblestone_on_magma.json
 68aa29027aae05d27b72ca078a8ee6d0d84adf10 data/tmtceic/recipe/cloche/tumblestones/tumblestone_on_magma.json
+f23f35cf91c5060dcf765e2ea2a1df6f4d8b7a75 data/tmtceic/recipe/metalpress/azure_ball_in_metalpress.json
+d2db94d590f1bacfd9343444546e725a74786144 data/tmtceic/recipe/metalpress/citrine_ball_in_metalpress.json
+09f47db27eeac51c3384a4df5bc70f22e3872b98 data/tmtceic/recipe/metalpress/poke_ball_in_metalpress.json
+69a910de7b8f7cd7a6f5f2ddb53fdc0469c47f5e data/tmtceic/recipe/metalpress/premier_ball_in_metalpress.json
+9769bb10ad14ccf2813c882ee2e555dba19db2f5 data/tmtceic/recipe/metalpress/roseate_ball_in_metalpress.json
+fe6e2ef7da3e003629bbcef8209c6e6f85505fe3 data/tmtceic/recipe/metalpress/slate_ball_in_metalpress.json
+6893fe59ce29418b8ebcd745dfb0def8aa053696 data/tmtceic/recipe/metalpress/verdant_ball_in_metalpress.json
 d85bac62a0f938555bc874c53024581af8e15ef2 data/tmtceic/recipe/mixer/antidote_in_mixer.json
 6e1fa7c2ed985e14f1eaa3e3d2a6d2a9f3b2f0de data/tmtceic/recipe/mixer/awakening_in_mixer.json
 117e00306804dc0f152264630455a63cbec6c091 data/tmtceic/recipe/mixer/burn_heal_in_mixer.json

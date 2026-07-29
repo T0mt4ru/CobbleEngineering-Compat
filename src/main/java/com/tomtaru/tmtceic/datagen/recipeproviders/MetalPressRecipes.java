@@ -3,22 +3,13 @@ package com.tomtaru.tmtceic.datagen.recipeproviders;
 import blusunrize.immersiveengineering.api.crafting.IngredientWithSize;
 import blusunrize.immersiveengineering.api.crafting.MetalPressRecipe;
 import blusunrize.immersiveengineering.api.crafting.TagOutput;
-import blusunrize.immersiveengineering.common.register.IEItems;
 import com.tomtaru.tmtceic.Tmtceic;
 import com.tomtaru.tmtceic.registry.ModItems;
-
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-
-
-import java.util.List;
-
-import static net.minecraft.world.item.Items.*;
-import static net.minecraft.world.item.crafting.Ingredient.of;
-
 
 public class MetalPressRecipes {
 
@@ -28,41 +19,31 @@ public class MetalPressRecipes {
     public static final IngredientWithSize frameNetherite = new IngredientWithSize(Ingredient.of(ModItems.NETHERITE_POKEBALL_FRAME.get()), 1);
     public static final Item moldPokeball = ModItems.MOLD_POKEBALL_FRAME.get();
 
-    private record TMTPressing(
-            IngredientWithSize input,
-            Item mold,
-            TagOutput output,
-            int energy,
-            String recipeName
-    ) {}
     public static void build(RecipeOutput output) {
 
+        for (String colour : Dexes.APRIDEX) {
+            ResourceLocation apricornID = ResourceLocation.fromNamespaceAndPath("cobblemon", colour + "_apricorn");
+            Item apricornItem = BuiltInRegistries.ITEM.get(apricornID);
+            IngredientWithSize apricorn = new IngredientWithSize(Ingredient.of(apricornItem), 1);
 
+            ResourceLocation pokeballID = ResourceLocation.fromNamespaceAndPath("cobblemon",   Dexes.APRICORN_TO_BALL.get(colour) + "_ball");
+            TagOutput pokeball = new TagOutput(BuiltInRegistries.ITEM.get(pokeballID));
+            String recipeName = Dexes.APRICORN_TO_BALL.get(colour) + "_ball_in_metalpress";
 
-        List<TMTPressing> pressRecipes = List.of(
-                //new TMTPressing(
-                //        new IngredientWithSize(of(ModItems.APPLE_PIE.get()), 1), moldUnpacking,
-                //        new TagOutput(ModItems.APPLE_PIE_SLICE.get(), 4),
-                //        energyStandard,"apple_pie_slice_in_metalpress"
-                //)
-
-        );
-
-        for (TMTPressing recipe : pressRecipes) {
-            generateMetalPressRecipe(output, recipe);
+            generateMetalPressRecipe(output, pokeball, apricorn, moldPokeball, energyStandard, recipeName);
         }
     }
 
-    private static void generateMetalPressRecipe(RecipeOutput output, TMTPressing data) {
+    private static void generateMetalPressRecipe(RecipeOutput pressRecipe, TagOutput outputItem, IngredientWithSize inputItem, Item moldItem, int energy, String recipeName ) {
         MetalPressRecipe recipe = new MetalPressRecipe(
-                data.output(),
-                data.input(),
-                data.mold(),
-                data.energy()
+                outputItem,
+                inputItem,
+                moldItem,
+                energy
         );
 
-        ResourceLocation id = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "metalpress/" + data.recipeName());
-        output.accept(id, recipe, null);
+        ResourceLocation id = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "metalpress/" + recipeName);
+        pressRecipe.accept(id, recipe, null);
     }
 
 

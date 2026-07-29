@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "energy": 3200,
+  "input": {
+    "item": "cobblemon:yellow_apricorn"
+  },
+  "mold": "tmtceic:mold_pokeball_frame",
+  "result": {
+    "id": "cobblemon:citrine_ball"
+  }
+}

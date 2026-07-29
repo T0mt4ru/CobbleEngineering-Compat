@@ -46,35 +46,6 @@ public class ClocheRecipes {
         CROP
     }
 
-    // The "Berrydex", list of all berries in cobblemon by name only, the rest is standard.
-    private static final String[] BERRYDEX = {
-            "cheri", "chesto", "pecha", "rawst", "aspear", "leppa", "oran", "persim",
-            "lum", "sitrus", "figy", "wiki", "mago", "aguav", "iapapa",
-            "razz", "bluk", "nanab", "wepear", "pinap", "pomeg", "kelpsy", "qualot",
-            "hondew", "grepa", "tamato", "cornn", "magost", "rabuta", "nomel",
-            "spelon", "pamtre", "watmel", "durin", "belue",
-            "occa", "passho", "wacan", "rindo", "yache", "chople", "kebia", "shuca",
-            "coba", "payapa", "tanga", "charti", "kasib", "haban", "colbur", "babiri",
-            "chilan", "liechi", "ganlon", "salac", "petaya", "apicot", "lansat",
-            "starf", "enigma", "micle", "custap", "jaboca", "rowap", "roseli",
-            "kee", "maranga", "hopo", "touga", "eggant"
-    };
-
-    // The "Mintdex", list of all coloured mints in cobblemon by colour only, the rest is standard.
-    private static final String[] MINTDEX = {
-            "red", "blue", "cyan", "pink", "green", "white"
-    };
-
-    // The "Tumbledex", list of all tumblestones in cobblemon by type and _, the rest is standard.
-    private static final String[] TUMBLEDEX = {
-            "", "black_", "sky_"
-    };
-
-    // The "Apridex", lists all coloured apricorn sprouts in cobblemon by colour only, the rest is standard.
-    private static final String[] APRIDEX = {
-            "red", "yellow", "blue", "black", "pink", "green", "white"
-    };
-
     // The "Miscdex", lists all non-groupable crops in a record.
     private record MiscCrop(
             String nameSpace,
@@ -266,7 +237,7 @@ public class ClocheRecipes {
         RecipeOutput farmersdelightOutput = output.withConditions(new ModLoadedCondition("farmersdelight"));
 
         // for-loop dealing with Berrydex.
-        for (String berryName : BERRYDEX) {
+        for (String berryName : Dexes.BERRYDEX) {
             ResourceLocation berryId = ResourceLocation.fromNamespaceAndPath("cobblemon", berryName + "_berry");
 
             Item berryItem = BuiltInRegistries.ITEM.get(berryId);
@@ -303,7 +274,7 @@ public class ClocheRecipes {
         }
 
         // for-loop dealing with Mintdex.
-        for (String mintColour : MINTDEX) {
+        for (String mintColour : Dexes.MINTDEX) {
             ResourceLocation mintSeedID = ResourceLocation.fromNamespaceAndPath("cobblemon", mintColour + "_mint_seeds");
             ResourceLocation mintCropID = ResourceLocation.fromNamespaceAndPath("cobblemon", mintColour + "_mint");
             ResourceLocation mintLeafID = ResourceLocation.fromNamespaceAndPath("cobblemon", mintColour + "_mint_leaf");
@@ -343,7 +314,7 @@ public class ClocheRecipes {
         }
 
         // for-loop dealing with Tumbledex.
-        for (String tumbleType : TUMBLEDEX) {
+        for (String tumbleType : Dexes.TUMBLEDEX) {
             ResourceLocation tumbleID = ResourceLocation.fromNamespaceAndPath("cobblemon", tumbleType + "tumblestone");
             ResourceLocation tumbleSmallBudID = ResourceLocation.fromNamespaceAndPath("cobblemon", "small_budding_" + tumbleType + "tumblestone");
             ResourceLocation tumbleMediumBudID = ResourceLocation.fromNamespaceAndPath("cobblemon", "medium_budding_" + tumbleType + "tumblestone");
@@ -378,7 +349,7 @@ public class ClocheRecipes {
         }
 
         // for-loop dealing with the apridex
-        for (String apricornName : APRIDEX) {
+        for (String apricornName : Dexes.APRIDEX) {
             ResourceLocation apricornSproutID = ResourceLocation.fromNamespaceAndPath("cobblemon", apricornName + "_apricorn_seed");
             ResourceLocation apricornFruitID = ResourceLocation.fromNamespaceAndPath("cobblemon", apricornName + "_apricorn");
             ResourceLocation apricornSaplingID = ResourceLocation.fromNamespaceAndPath("cobblemon", apricornName + "_apricorn_sapling");

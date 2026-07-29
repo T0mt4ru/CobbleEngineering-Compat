@@ -3,9 +3,7 @@ package com.tomtaru.tmtceic.datagen.recipeproviders;
 import blusunrize.immersiveengineering.api.crafting.IngredientWithSize;
 import blusunrize.immersiveengineering.api.crafting.SqueezerRecipe;
 import blusunrize.immersiveengineering.api.crafting.TagOutput;
-import com.cobblemon.mod.common.CobblemonItems;
 import com.tomtaru.tmtceic.Tmtceic;
-
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -13,17 +11,9 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.fluids.FluidStack;
 
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class SqueezerRecipes {
 
     public static final int energyStandard = 3200;
-
-    private static final String[] APRIGELDEX = {
-            "red", "yellow", "blue", "black", "pink", "green", "white"
-    };
 
     private record TMTSqueezing(
             IngredientWithSize input,
@@ -34,9 +24,9 @@ public class SqueezerRecipes {
     ) {}
     public static void build(RecipeOutput output) {
 
-        for (String aprigel : APRIGELDEX) {
+        for (String aprigel : Dexes.APRIDEX) {
             ResourceLocation apricornID = ResourceLocation.fromNamespaceAndPath("cobblemon", aprigel + "_apricorn");
-            ResourceLocation aprigelID = ResourceLocation.fromNamespaceAndPath("tmtceic", aprigel + "_aprigel");
+            ResourceLocation aprigelID = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, aprigel + "_aprigel");
             ResourceLocation dyeID = ResourceLocation.fromNamespaceAndPath("minecraft", aprigel +"_dye");
 
             TMTSqueezing recipe = new TMTSqueezing(
