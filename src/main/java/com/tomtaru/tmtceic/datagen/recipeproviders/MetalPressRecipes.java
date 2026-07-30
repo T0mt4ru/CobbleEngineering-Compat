@@ -15,8 +15,7 @@ public class MetalPressRecipes {
 
     public static final int energyStandard = 3200;
 
-    public static final IngredientWithSize frameAluminum = new IngredientWithSize(Ingredient.of(ModItems.ALUMINUM_POKEBALL_FRAME.get()), 1);
-    public static final IngredientWithSize frameNetherite = new IngredientWithSize(Ingredient.of(ModItems.NETHERITE_POKEBALL_FRAME.get()), 1);
+
     public static final Item moldPokeball = ModItems.MOLD_POKEBALL_FRAME.get();
 
     public static void build(RecipeOutput output) {

@@ -41,11 +41,28 @@ public final class Dexes {
             "poke", "citrine", "azure", "slate", "roseate", "verdant", "premier"
     };
 
+    public static final String[] ANCIENTBALLDEX = {
+            "ancient_poke", "ancient_citrine", "ancient_azure", "ancient_slate", "ancient_roseate",
+            "ancient_verdant", "ancient_ivory"
+    };
+
     public static final Map<String, String> APRICORN_TO_BALL = new HashMap<>();
+    public static final Map<String, String> APRICORN_TO_ANCIENTBALL = new HashMap<>();
 
     static {
-        for (int i = 0; i < APRIDEX.length; i++) {
-            APRICORN_TO_BALL.put(APRIDEX[i], BASICBALLDEX[i]);
+        for (int index = 0; index < APRIDEX.length; index++) {
+            APRICORN_TO_BALL.put(APRIDEX[index], BASICBALLDEX[index]);
         }
     }
+    static {
+        for (int index = 0; index < BASICBALLDEX.length; index++) {
+            APRICORN_TO_ANCIENTBALL.put(APRIDEX[index], ANCIENTBALLDEX[index]);
+        }
+    }
+
+    public static final String[] POTIONDEX = {
+            "potion", "super_potion", "hyper_potion", "max_potion", "ether", "max_ether", "elixir", "max_elixir",
+            "antidote", "awakening", "paralyze_heal", "burn_heal", "ice_heal", "full_heal", "full_restore",
+            "throat_spray"
+    };
 }
