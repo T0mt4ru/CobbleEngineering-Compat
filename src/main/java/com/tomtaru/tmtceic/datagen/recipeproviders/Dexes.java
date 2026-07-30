@@ -46,17 +46,41 @@ public final class Dexes {
             "ancient_verdant", "ancient_ivory"
     };
 
+    public static final String[] ADVANCEDBALLDEX = {
+            "dive", "dream", "dusk", "fast", "friend", "great", "heal", "heavy", "level", "love", "lure",
+            "luxury", "moon", "nest", "net", "park", "quick", "repeat", "safari", "sport", "ultra"
+    };
+
+    public static final String[] FRAMEDEX = {
+            "azure", "love", "slate", "citrine", "nest", "azure", "premier", "slate", "ultra", "roseate",
+            "park", "ultra", "heavy", "citrine", "azure", "verdant", "azure", "sport", "verdant", "poke", "slate"
+    };
+
+    public static final String[] SPRAYDEX = {
+            "white", "blue", "green", "red", "red", "red", "pink", "blue", "pink", "white", "blue",
+            "red", "yellow", "green", "black", "white", "yellow", "black", "yellow", "white", "yellow"
+    };
+
     public static final Map<String, String> APRICORN_TO_BALL = new HashMap<>();
     public static final Map<String, String> APRICORN_TO_ANCIENTBALL = new HashMap<>();
+    public static final Map<String, String> ADVANCEDBALL_TO_FRAME = new HashMap<>();
+    public static final Map<String, String> ADVANCEDBALL_TO_SPRAY = new HashMap<>();
 
     static {
         for (int index = 0; index < APRIDEX.length; index++) {
             APRICORN_TO_BALL.put(APRIDEX[index], BASICBALLDEX[index]);
         }
-    }
-    static {
-        for (int index = 0; index < BASICBALLDEX.length; index++) {
+
+        for (int index = 0; index < APRIDEX.length; index++) {
             APRICORN_TO_ANCIENTBALL.put(APRIDEX[index], ANCIENTBALLDEX[index]);
+        }
+
+        for (int index = 0; index < ADVANCEDBALLDEX.length; index++) {
+            ADVANCEDBALL_TO_FRAME.put(ADVANCEDBALLDEX[index], FRAMEDEX[index]);
+        }
+
+        for (int index = 0; index < ADVANCEDBALLDEX.length; index++) {
+            ADVANCEDBALL_TO_SPRAY.put(ADVANCEDBALLDEX[index], SPRAYDEX[index]);
         }
     }
 

@@ -1,0 +1,13 @@
+{
+  "type": "immersiveengineering:bottling_machine",
+  "fluid": {
+    "amount": 125,
+    "fluid": "tmtceic:yellow_aprigel"
+  },
+  "input": [],
+  "results": [
+    {
+      "id": "cobblemon:quick_ball"
+    }
+  ]
+}

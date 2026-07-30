@@ -1,0 +1,15 @@
+{
+  "type": "immersiveengineering:bottling_machine",
+  "fluid": {
+    "amount": 125,
+    "fluid": "tmtceic:red_aprigel"
+  },
+  "input": {
+    "item": "tmtceic:aluminum_pokeball_frame"
+  },
+  "results": [
+    {
+      "id": "cobblemon:poke_ball"
+    }
+  ]
+}
