@@ -74,5 +74,8 @@
   "fluid_type.tmtceic.white_aprigel": "White Aprigel",
   "block.tmtceic.throat_spray": "Throat Spray",
   "fluid.tmtceic.throat_spray": "Throat Spray",
-  "fluid_type.tmtceic.throat_spray": "Throat Spray"
+  "fluid_type.tmtceic.throat_spray": "Throat Spray",
+  "item.tmtceic.moon_stone_dust": "Moon Stone Dust",
+  "item.tmtceic.sun_stone_dust": "Sun Stone Dust",
+  "item.tmtceic.shiny_stone_dust": "Shiny Stone Dust"
 }

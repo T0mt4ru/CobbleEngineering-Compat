@@ -67,7 +67,7 @@ public class BottlingMachineRecipes {
     /**
      *
      * @param bottlingOutput    - recipeoutput
-     * @param outputItems       - output of the bottler, as a list, even o single items.
+     * @param outputItems       - output of the bottler, as a list, even for single items.
      * @param containerItem     - Item to be used as a "container"
      * @param inputFluid        - What fluid do we use?
      * @param recipeName        - What do we call this recipe?

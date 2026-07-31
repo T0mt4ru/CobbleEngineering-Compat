@@ -1,0 +1,19 @@
+{
+  "type": "immersiveengineering:crusher",
+  "energy": 7500,
+  "input": {
+    "item": "cobblemon:deepslate_dusk_stone_ore"
+  },
+  "result": {
+    "count": 2,
+    "id": "cobblemon:dusk_stone"
+  },
+  "secondaries": [
+    {
+      "chance": 0.5,
+      "output": {
+        "id": "cobblemon:dusk_stone"
+      }
+    }
+  ]
+}

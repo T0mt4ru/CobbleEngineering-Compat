@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:crusher",
+  "energy": 6000,
+  "input": {
+    "item": "cobblemon:moon_stone"
+  },
+  "result": {
+    "count": 2,
+    "id": "tmtceic:moon_stone_dust"
+  }
+}

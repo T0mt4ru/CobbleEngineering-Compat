@@ -89,4 +89,8 @@ public final class Dexes {
             "antidote", "awakening", "paralyze_heal", "burn_heal", "ice_heal", "full_heal", "full_restore",
             "throat_spray"
     };
+
+    public static final String[] EVOLUTIONSTONEDEX = {
+            "dawn", "dusk", "fire", "ice", "leaf", "moon", "shiny", "sun", "thunder", "water"
+    };
 }
