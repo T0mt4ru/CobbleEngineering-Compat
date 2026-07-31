@@ -1,0 +1,5 @@
+{
+  "type": "immersiveengineering:thermoelectric_source",
+  "singleBlock": "cobblemon:sun_stone_block",
+  "tempKelvin": 1700
+}

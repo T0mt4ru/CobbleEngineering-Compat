@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "energy": 3200,
+  "input": {
+    "tag": "c:ingots/netherite"
+  },
+  "mold": "tmtceic:mold_pokeball_frame",
+  "result": {
+    "id": "tmtceic:netherite_pokeball_frame"
+  }
+}

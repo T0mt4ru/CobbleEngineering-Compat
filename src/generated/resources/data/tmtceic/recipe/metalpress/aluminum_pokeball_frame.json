@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "energy": 3200,
+  "input": {
+    "tag": "c:ingots/aluminum"
+  },
+  "mold": "tmtceic:mold_pokeball_frame",
+  "result": {
+    "id": "tmtceic:aluminum_pokeball_frame"
+  }
+}

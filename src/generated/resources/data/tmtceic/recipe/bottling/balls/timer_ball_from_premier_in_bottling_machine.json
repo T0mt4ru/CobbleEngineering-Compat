@@ -1,0 +1,15 @@
+{
+  "type": "immersiveengineering:bottling_machine",
+  "fluid": {
+    "amount": 125,
+    "fluid": "tmtceic:black_aprigel"
+  },
+  "input": {
+    "item": "cobblemon:premier_ball"
+  },
+  "results": [
+    {
+      "id": "cobblemon:timer_ball"
+    }
+  ]
+}

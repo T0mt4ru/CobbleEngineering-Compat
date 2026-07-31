@@ -48,17 +48,17 @@ public final class Dexes {
 
     public static final String[] ADVANCEDBALLDEX = {
             "dive", "dream", "dusk", "fast", "friend", "great", "heal", "heavy", "level", "love", "lure",
-            "luxury", "moon", "nest", "net", "park", "quick", "repeat", "safari", "sport", "ultra"
+            "luxury", "moon", "nest", "net", "park", "quick", "repeat", "safari", "sport", "ultra", "timer"
     };
 
     public static final String[] FRAMEDEX = {
             "azure", "love", "slate", "citrine", "nest", "azure", "premier", "slate", "ultra", "roseate",
-            "park", "ultra", "heavy", "citrine", "azure", "verdant", "azure", "sport", "verdant", "poke", "slate"
+            "park", "ultra", "heavy", "citrine", "azure", "verdant", "azure", "sport", "verdant", "poke", "slate", "premier"
     };
 
     public static final String[] SPRAYDEX = {
             "white", "blue", "green", "red", "red", "red", "pink", "blue", "pink", "white", "blue",
-            "red", "yellow", "green", "black", "white", "yellow", "black", "yellow", "white", "yellow"
+            "red", "yellow", "green", "black", "white", "yellow", "black", "yellow", "white", "yellow", "black"
     };
 
     public static final Map<String, String> APRICORN_TO_BALL = new HashMap<>();

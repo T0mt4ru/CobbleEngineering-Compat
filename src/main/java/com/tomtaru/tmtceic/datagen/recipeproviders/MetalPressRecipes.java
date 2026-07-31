@@ -8,13 +8,13 @@ import com.tomtaru.tmtceic.registry.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public class MetalPressRecipes {
 
     public static final int energyStandard = 3200;
-
 
     public static final Item moldPokeball = ModItems.MOLD_POKEBALL_FRAME.get();
 
@@ -31,6 +31,24 @@ public class MetalPressRecipes {
 
             generateMetalPressRecipe(output, pokeball, apricorn, moldPokeball, energyStandard, recipeName);
         }
+
+        generateMetalPressRecipe(
+                output,
+                new TagOutput(ModItems.ALUMINUM_POKEBALL_FRAME, 1),
+                new IngredientWithSize(Ingredient.of(TagKey.create(BuiltInRegistries.ITEM.key(), ResourceLocation.fromNamespaceAndPath("c", "ingots/aluminum"))), 1),
+                moldPokeball,
+                energyStandard,
+                "aluminum_pokeball_frame"
+                );
+
+        generateMetalPressRecipe(
+                output,
+                new TagOutput(ModItems.NETHERITE_POKEBALL_FRAME, 1),
+                new IngredientWithSize(Ingredient.of(TagKey.create(BuiltInRegistries.ITEM.key(), ResourceLocation.fromNamespaceAndPath("c", "ingots/netherite"))), 1),
+                moldPokeball,
+                energyStandard,
+                "netherite_pokeball_frame"
+        );
     }
 
     private static void generateMetalPressRecipe(RecipeOutput pressRecipe, TagOutput outputItem, IngredientWithSize inputItem, Item moldItem, int energy, String recipeName ) {

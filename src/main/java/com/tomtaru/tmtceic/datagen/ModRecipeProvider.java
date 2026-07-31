@@ -25,5 +25,7 @@ public class ModRecipeProvider extends RecipeProvider {
         MetalPressRecipes.build(output);
         SawmillRecipes.build(output);
         SqueezerRecipes.build(output);
+        BlueprintRecipes.build(output);
+        ThermoelectricRecipes.build(output);
     }
 }
