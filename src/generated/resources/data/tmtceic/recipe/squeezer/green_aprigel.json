@@ -2,7 +2,7 @@
   "type": "immersiveengineering:squeezer",
   "energy": 3200,
   "fluid": {
-    "amount": 250,
+    "amount": 125,
     "id": "tmtceic:green_aprigel"
   },
   "input": {
