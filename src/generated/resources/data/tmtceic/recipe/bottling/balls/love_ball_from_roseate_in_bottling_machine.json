@@ -4,7 +4,9 @@
     "amount": 125,
     "fluid": "tmtceic:white_aprigel"
   },
-  "input": [],
+  "input": {
+    "item": "cobblemon:roseate_ball"
+  },
   "results": [
     {
       "id": "cobblemon:love_ball"

@@ -54,7 +54,7 @@ public class BottlingMachineRecipes {
             ResourceLocation ballItemID = ResourceLocation.fromNamespaceAndPath("cobblemon", ball + "_ball");
             List<TagOutput> ballItem = List.of(new TagOutput(BuiltInRegistries.ITEM.get(ballItemID)));
 
-            ResourceLocation frameID = ResourceLocation.fromNamespaceAndPath("cobblemon", Dexes.ADVANCEDBALL_TO_FRAME.get(ball) + "_frame");
+            ResourceLocation frameID = ResourceLocation.fromNamespaceAndPath("cobblemon", Dexes.ADVANCEDBALL_TO_FRAME.get(ball) + "_ball");
             IngredientWithSize frameItem = new IngredientWithSize(Ingredient.of(BuiltInRegistries.ITEM.get(frameID)), 1);
 
             ResourceLocation aprigelID = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID,  Dexes.ADVANCEDBALL_TO_SPRAY.get(ball) + "_aprigel");

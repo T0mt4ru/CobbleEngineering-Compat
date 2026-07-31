@@ -9,6 +9,6 @@
     "item": "cobblemon:red_apricorn"
   },
   "result": {
-    "item": "minecraft:red_dye"
+    "id": "minecraft:red_dye"
   }
 }

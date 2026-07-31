@@ -8,47 +8,42 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.fluids.FluidStack;
 
 public class SqueezerRecipes {
 
-    public static final int energyStandard = 3200;
+    private static final int energyStandard = 3200;
+    private static final int fluidAmountQuarterBucket = 250;
 
-    private record TMTSqueezing(
-            IngredientWithSize input,
-            ResourceLocation fluidID, int fluidAmount,
-            TagOutput itemOutput,
-            int energy,
-            String recipeName
-    ) {}
     public static void build(RecipeOutput output) {
 
         for (String aprigel : Dexes.APRIDEX) {
             ResourceLocation apricornID = ResourceLocation.fromNamespaceAndPath("cobblemon", aprigel + "_apricorn");
+            IngredientWithSize apricornItem = new IngredientWithSize(Ingredient.of(BuiltInRegistries.ITEM.get(apricornID)), 1);
+
             ResourceLocation aprigelID = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, aprigel + "_aprigel");
+            FluidStack aprigelFluid = new FluidStack(BuiltInRegistries.FLUID.get(aprigelID), fluidAmountQuarterBucket);
+
             ResourceLocation dyeID = ResourceLocation.fromNamespaceAndPath("minecraft", aprigel +"_dye");
+            TagOutput dyeItem = new TagOutput(BuiltInRegistries.ITEM.get(dyeID));
 
-            TMTSqueezing recipe = new TMTSqueezing(
-                    new IngredientWithSize(Ingredient.of(BuiltInRegistries.ITEM.get(apricornID)), 1),
-                            aprigelID, 250,
-                            new TagOutput(new IngredientWithSize(Ingredient.of(BuiltInRegistries.ITEM.get(dyeID)), 1)),
-                            energyStandard,
-                            aprigel + "_aprigel"
-            );
+            String recipeName = aprigel + "_aprigel";
 
-            generateSqueezerRecipe(output, recipe);
+            generateSqueezerRecipe(output, apricornItem, aprigelFluid, dyeItem, energyStandard, recipeName);
         }
     }
 
-    private static void generateSqueezerRecipe(RecipeOutput output, TMTSqueezing data) {
-        Fluid fluid = BuiltInRegistries.FLUID.get(data.fluidID());
-        FluidStack fluidOutput = new FluidStack(fluid, data.fluidAmount());
+    private static void generateSqueezerRecipe(RecipeOutput recipeOutput, IngredientWithSize inputItem, FluidStack outputFluid, TagOutput outputItem, int energy, String recipeName) {
 
-        SqueezerRecipe recipe = new SqueezerRecipe(fluidOutput, data.itemOutput(), data.input(), data.energy());
+        SqueezerRecipe recipe = new SqueezerRecipe(
+                outputFluid,
+                outputItem,
+                inputItem,
+                energy
+        );
 
-        ResourceLocation id = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "squeezer/" + data.recipeName());
-        output.accept(id, recipe, null);
+        ResourceLocation id = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "squeezer/" + recipeName);
+        recipeOutput.accept(id, recipe, null);
     }
 
 

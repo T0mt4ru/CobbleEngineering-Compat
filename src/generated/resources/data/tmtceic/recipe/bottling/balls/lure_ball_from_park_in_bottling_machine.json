@@ -4,7 +4,9 @@
     "amount": 125,
     "fluid": "tmtceic:blue_aprigel"
   },
-  "input": [],
+  "input": {
+    "item": "cobblemon:park_ball"
+  },
   "results": [
     {
       "id": "cobblemon:lure_ball"

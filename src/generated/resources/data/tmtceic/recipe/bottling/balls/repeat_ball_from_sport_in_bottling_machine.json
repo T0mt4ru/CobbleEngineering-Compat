@@ -4,7 +4,9 @@
     "amount": 125,
     "fluid": "tmtceic:black_aprigel"
   },
-  "input": [],
+  "input": {
+    "item": "cobblemon:sport_ball"
+  },
   "results": [
     {
       "id": "cobblemon:repeat_ball"

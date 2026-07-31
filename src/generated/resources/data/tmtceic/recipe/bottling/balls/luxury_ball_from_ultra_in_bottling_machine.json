@@ -4,7 +4,9 @@
     "amount": 125,
     "fluid": "tmtceic:red_aprigel"
   },
-  "input": [],
+  "input": {
+    "item": "cobblemon:ultra_ball"
+  },
   "results": [
     {
       "id": "cobblemon:luxury_ball"

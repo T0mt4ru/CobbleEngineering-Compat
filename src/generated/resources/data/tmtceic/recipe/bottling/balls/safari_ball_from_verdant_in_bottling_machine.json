@@ -4,7 +4,9 @@
     "amount": 125,
     "fluid": "tmtceic:yellow_aprigel"
   },
-  "input": [],
+  "input": {
+    "item": "cobblemon:verdant_ball"
+  },
   "results": [
     {
       "id": "cobblemon:safari_ball"

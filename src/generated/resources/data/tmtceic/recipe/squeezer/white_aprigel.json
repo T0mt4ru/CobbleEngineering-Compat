@@ -9,6 +9,6 @@
     "item": "cobblemon:white_apricorn"
   },
   "result": {
-    "item": "minecraft:white_dye"
+    "id": "minecraft:white_dye"
   }
 }
