@@ -1,0 +1,24 @@
+{
+  "type": "immersiveengineering:blueprint",
+  "category": "ancient_pokeballs",
+  "inputs": [
+    {
+      "basePredicate": {
+        "item": "cobblemon:blue_apricorn"
+      },
+      "count": 2
+    },
+    {
+      "basePredicate": {
+        "item": "cobblemon:tumblestone"
+      },
+      "count": 2
+    },
+    {
+      "item": "minecraft:stone_button"
+    }
+  ],
+  "result": {
+    "id": "cobblemon:ancient_azure_ball"
+  }
+}

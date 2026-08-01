@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "cobblemon:apricorns"
+    },
+    "D": {
+      "item": "minecraft:blue_dye"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    " A ",
+    "DDD",
+    "PPP"
+  ],
+  "result": {
+    "components": {
+      "immersiveengineering:blueprint": "ancient_pokeballs"
+    },
+    "count": 1,
+    "id": "immersiveengineering:blueprint"
+  }
+}
