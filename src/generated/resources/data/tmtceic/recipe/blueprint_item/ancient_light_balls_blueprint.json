@@ -8,18 +8,18 @@
     "P": {
       "item": "minecraft:paper"
     },
-    "T": {
-      "item": "cobblemon:tumblestone"
+    "S": {
+      "item": "cobblemon:sky_tumblestone"
     }
   },
   "pattern": [
-    " T ",
+    " S ",
     "DDD",
     "PPP"
   ],
   "result": {
     "components": {
-      "immersiveengineering:blueprint": "ancient_pokeballs"
+      "immersiveengineering:blueprint": "ancient_light_balls"
     },
     "count": 1,
     "id": "immersiveengineering:blueprint"

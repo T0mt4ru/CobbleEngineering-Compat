@@ -2,24 +2,24 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "B": {
+      "item": "cobblemon:black_tumblestone"
+    },
     "D": {
       "item": "minecraft:blue_dye"
     },
     "P": {
       "item": "minecraft:paper"
-    },
-    "T": {
-      "item": "cobblemon:tumblestone"
     }
   },
   "pattern": [
-    " T ",
+    " B ",
     "DDD",
     "PPP"
   ],
   "result": {
     "components": {
-      "immersiveengineering:blueprint": "ancient_pokeballs"
+      "immersiveengineering:blueprint": "ancient_heavy_balls"
     },
     "count": 1,
     "id": "immersiveengineering:blueprint"

@@ -15,10 +15,11 @@
       "count": 2
     },
     {
-      "item": "minecraft:stone_button"
+      "tag": "minecraft:buttons"
     }
   ],
   "result": {
+    "count": 4,
     "id": "cobblemon:ancient_verdant_ball"
   }
 }

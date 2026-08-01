@@ -1,6 +1,7 @@
 package com.tomtaru.tmtceic.datagen.recipeproviders;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public final class Dexes {
@@ -93,4 +94,20 @@ public final class Dexes {
     public static final String[] EVOLUTIONSTONEDEX = {
             "dawn", "dusk", "fire", "ice", "leaf", "moon", "shiny", "sun", "thunder", "water"
     };
+
+    public record AncientSkyDex(String name, String ingot) {}
+
+    public static final List<AncientSkyDex> ANCIENTSKYDEX = List.of(
+            new AncientSkyDex("feather",    "copper"),
+            new AncientSkyDex("wing",       "iron"),
+            new AncientSkyDex("jet",        "gold")
+    );
+
+    public record AncientBlackDex(String name, String ingot) {}
+
+    public static final List<AncientBlackDex> ANCIENTBLACKDEX = List.of(
+            new AncientBlackDex("heavy",    "copper"),
+            new AncientBlackDex("leaden",   "iron"),
+            new AncientBlackDex("gigaton",   "gold")
+    );
 }

@@ -1,25 +1,25 @@
 {
   "type": "immersiveengineering:blueprint",
-  "category": "ancient_pokeballs",
+  "category": "ancient_heavy_balls",
   "inputs": [
     {
       "basePredicate": {
-        "item": "cobblemon:white_apricorn"
+        "item": "cobblemon:black_apricorn"
       },
       "count": 2
     },
     {
       "basePredicate": {
-        "item": "cobblemon:tumblestone"
+        "item": "cobblemon:sky_tumblestone"
       },
       "count": 2
     },
     {
-      "tag": "minecraft:buttons"
+      "tag": "c:ingots/iron"
     }
   ],
   "result": {
     "count": 4,
-    "id": "cobblemon:ancient_ivory_ball"
+    "id": "cobblemon:ancient_leaden_ball"
   }
 }

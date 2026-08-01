@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_black_tumblestone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:black_tumblestone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tmtceic:blueprint_item/ancient_heavy_balls_blueprint"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_black_tumblestone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tmtceic:blueprint_item/ancient_heavy_balls_blueprint"
+    ]
+  }
+}

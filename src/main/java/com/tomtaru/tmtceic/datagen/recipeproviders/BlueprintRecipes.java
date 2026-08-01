@@ -5,17 +5,18 @@ import blusunrize.immersiveengineering.api.crafting.IngredientWithSize;
 import blusunrize.immersiveengineering.api.crafting.TagOutput;
 import blusunrize.immersiveengineering.common.register.IEItems;
 import com.cobblemon.mod.common.CobblemonItems;
-import com.cobblemon.mod.common.item.CobblemonItem;
+
 import com.tomtaru.tmtceic.Tmtceic;
 import com.tomtaru.tmtceic.registry.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Items;
+
 import net.minecraft.world.item.crafting.Ingredient;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 public class BlueprintRecipes {
@@ -36,13 +37,13 @@ public class BlueprintRecipes {
         for (String colour : Dexes.APRIDEX) {
 
             ResourceLocation ballID = ResourceLocation.fromNamespaceAndPath("cobblemon", Dexes.APRICORN_TO_ANCIENTBALL.get(colour) + "_ball");
-            TagOutput ballItem = new TagOutput(BuiltInRegistries.ITEM.get(ballID));
+            TagOutput ballItem = new TagOutput(BuiltInRegistries.ITEM.get(ballID), 4);
 
             ResourceLocation apricornID = ResourceLocation.fromNamespaceAndPath("cobblemon",  colour + "_apricorn");
             List<IngredientWithSize> ingredients = List.of(
                     new IngredientWithSize(Ingredient.of(BuiltInRegistries.ITEM.get(apricornID)), 2),
                     new IngredientWithSize(Ingredient.of(CobblemonItems.TUMBLESTONE), 2),
-                    new IngredientWithSize(Ingredient.of(Items.STONE_BUTTON),1)
+                    new IngredientWithSize(Ingredient.of(ItemTags.BUTTONS),1)
             );
 
             generateBlueprintRecipe(
@@ -52,6 +53,45 @@ public class BlueprintRecipes {
                     "ancient_pokeballs",
                     Dexes.APRICORN_TO_ANCIENTBALL.get(colour) + "_ball"
 
+            );
+        }
+
+        for (Dexes.AncientSkyDex ball : Dexes.ANCIENTSKYDEX) {
+
+            ResourceLocation ballID = ResourceLocation.fromNamespaceAndPath("cobblemon", "ancient_" + ball.name() + "_ball");
+            TagOutput ballItem = new TagOutput(BuiltInRegistries.ITEM.get(ballID), 4);
+
+            List<IngredientWithSize> ingredients = List.of(
+                    new IngredientWithSize(Ingredient.of(CobblemonItems.WHITE_APRICORN), 1),
+                    new IngredientWithSize(Ingredient.of(CobblemonItems.BLUE_APRICORN), 1),
+                    new IngredientWithSize(Ingredient.of(CobblemonItems.SKY_TUMBLESTONE), 2),
+                    new IngredientWithSize(Ingredient.of(TagKey.create(BuiltInRegistries.ITEM.key(), ResourceLocation.fromNamespaceAndPath("c", "ingots/" + ball.ingot()))), 1)
+                    );
+            generateBlueprintRecipe(
+                    output,
+                    ballItem,
+                    ingredients,
+                    "ancient_light_balls",
+                    "ancient_" + ball.name() + "_ball"
+            );
+        }
+
+        for (Dexes.AncientBlackDex ball : Dexes.ANCIENTBLACKDEX) {
+
+            ResourceLocation ballID = ResourceLocation.fromNamespaceAndPath("cobblemon", "ancient_" + ball.name() + "_ball");
+            TagOutput ballItem = new TagOutput(BuiltInRegistries.ITEM.get(ballID), 4);
+
+            List<IngredientWithSize> ingredients = List.of(
+                    new IngredientWithSize(Ingredient.of(CobblemonItems.BLACK_APRICORN), 2),
+                    new IngredientWithSize(Ingredient.of(CobblemonItems.SKY_TUMBLESTONE), 2),
+                    new IngredientWithSize(Ingredient.of(TagKey.create(BuiltInRegistries.ITEM.key(), ResourceLocation.fromNamespaceAndPath("c", "ingots/" + ball.ingot()))), 1)
+            );
+            generateBlueprintRecipe(
+                    output,
+                    ballItem,
+                    ingredients,
+                    "ancient_heavy_balls",
+                    "ancient_" + ball.name() + "_ball"
             );
         }
     }

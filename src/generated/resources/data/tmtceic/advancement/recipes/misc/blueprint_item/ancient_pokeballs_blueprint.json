@@ -1,27 +1,27 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_apricorn": {
-      "conditions": {
-        "items": [
-          {
-            "items": "cobblemon:red_apricorn"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "tmtceic:blueprint_item/ancient_pokeballs_blueprint"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tumblestone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cobblemon:tumblestone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_apricorn"
+      "has_tumblestone"
     ]
   ],
   "rewards": {

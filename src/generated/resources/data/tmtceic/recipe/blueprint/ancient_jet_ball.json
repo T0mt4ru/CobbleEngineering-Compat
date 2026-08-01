@@ -1,0 +1,25 @@
+{
+  "type": "immersiveengineering:blueprint",
+  "category": "ancient_light_balls",
+  "inputs": [
+    {
+      "item": "cobblemon:white_apricorn"
+    },
+    {
+      "item": "cobblemon:blue_apricorn"
+    },
+    {
+      "basePredicate": {
+        "item": "cobblemon:sky_tumblestone"
+      },
+      "count": 2
+    },
+    {
+      "tag": "c:ingots/gold"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "cobblemon:ancient_jet_ball"
+  }
+}

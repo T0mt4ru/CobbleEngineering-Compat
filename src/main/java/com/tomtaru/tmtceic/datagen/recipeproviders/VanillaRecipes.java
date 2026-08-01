@@ -1,18 +1,11 @@
 package com.tomtaru.tmtceic.datagen.recipeproviders;
 
-import blusunrize.immersiveengineering.api.EnumMetals;
 import blusunrize.immersiveengineering.api.crafting.BlueprintCraftingRecipe;
-import blusunrize.immersiveengineering.common.register.IEItems;
 import com.cobblemon.mod.common.CobblemonItems;
 import com.tomtaru.tmtceic.Tmtceic;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -22,19 +15,38 @@ public class VanillaRecipes {
     public static void build(RecipeOutput output) {
 
         ItemStack ancientBallBlueprint = BlueprintCraftingRecipe.getTypedBlueprint("ancient_pokeballs");
-
-        TagKey<Item> apricornsTag = TagKey.create(Registries.ITEM,
-                ResourceLocation.fromNamespaceAndPath("cobblemon", "apricorns"));
+        ItemStack ancientLightBallBlueprint = BlueprintCraftingRecipe.getTypedBlueprint("ancient_light_balls");
+        ItemStack ancientHeavyBallBlueprint = BlueprintCraftingRecipe.getTypedBlueprint("ancient_heavy_balls");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ancientBallBlueprint)
-                .pattern(" A ")
+                .pattern(" T ")
                 .pattern("DDD")
                 .pattern("PPP")
-                .define('A', Ingredient.of(apricornsTag))
+                .define('T', Ingredient.of(CobblemonItems.TUMBLESTONE))
                 .define('D', Items.BLUE_DYE)
                 .define('P', Items.PAPER)
-                .unlockedBy("has_apricorn", InventoryChangeTrigger.TriggerInstance.hasItems(CobblemonItems.RED_APRICORN))
+                .unlockedBy("has_tumblestone", InventoryChangeTrigger.TriggerInstance.hasItems(CobblemonItems.TUMBLESTONE))
                 .save(output, ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "blueprint_item/ancient_pokeballs_blueprint"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ancientLightBallBlueprint)
+                .pattern(" S ")
+                .pattern("DDD")
+                .pattern("PPP")
+                .define('S', Ingredient.of(CobblemonItems.SKY_TUMBLESTONE))
+                .define('D', Items.BLUE_DYE)
+                .define('P', Items.PAPER)
+                .unlockedBy("has_sky_tumblestone", InventoryChangeTrigger.TriggerInstance.hasItems(CobblemonItems.SKY_TUMBLESTONE))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "blueprint_item/ancient_light_balls_blueprint"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ancientHeavyBallBlueprint)
+                .pattern(" B ")
+                .pattern("DDD")
+                .pattern("PPP")
+                .define('B', Ingredient.of(CobblemonItems.BLACK_TUMBLESTONE))
+                .define('D', Items.BLUE_DYE)
+                .define('P', Items.PAPER)
+                .unlockedBy("has_black_tumblestone", InventoryChangeTrigger.TriggerInstance.hasItems(CobblemonItems.BLACK_TUMBLESTONE))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "blueprint_item/ancient_heavy_balls_blueprint"));
 
         //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.SLIME_BALL)
         //        .requires(Items.LIME_DYE)
