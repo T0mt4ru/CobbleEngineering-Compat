@@ -8,7 +8,6 @@ import com.tomtaru.tmtceic.Tmtceic;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 
@@ -120,6 +119,13 @@ public class CrusherRecipes {
 
             generateCrusherRecipe(output, stoneOreItem, stoneItem, energyStone, secondaryStoneItems, evoStone + "_stone_ore");
             generateCrusherRecipe(output, deepslateOreItem, stoneItem, energyDeepslate, secondaryDeepslateItems, "deepslate_"  + evoStone + "_stone_ore");
+        }
+
+        for (Dexes.TumbleCrystalDex crystalEntry : Dexes.TUMBLECRYSTALDEX) {
+
+            TagOutput resultItem = new TagOutput(crystalEntry.result(), crystalEntry.yield());
+
+            generateCrusherRecipe(output, Ingredient.of(crystalEntry.crystal()), resultItem, energyStone, noSecondaries, BuiltInRegistries.ITEM.getKey(crystalEntry.crystal()).getPath());
         }
     }
 

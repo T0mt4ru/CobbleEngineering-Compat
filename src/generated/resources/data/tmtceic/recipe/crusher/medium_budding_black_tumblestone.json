@@ -1,0 +1,10 @@
+{
+  "type": "immersiveengineering:crusher",
+  "energy": 6000,
+  "input": {
+    "item": "cobblemon:medium_budding_black_tumblestone"
+  },
+  "result": {
+    "id": "cobblemon:black_tumblestone"
+  }
+}

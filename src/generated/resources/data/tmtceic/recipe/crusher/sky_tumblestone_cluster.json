@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:crusher",
+  "energy": 6000,
+  "input": {
+    "item": "cobblemon:sky_tumblestone_cluster"
+  },
+  "result": {
+    "count": 4,
+    "id": "cobblemon:sky_tumblestone"
+  }
+}

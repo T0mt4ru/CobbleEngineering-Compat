@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:crusher",
+  "energy": 6000,
+  "input": {
+    "item": "cobblemon:black_tumblestone_cluster"
+  },
+  "result": {
+    "count": 4,
+    "id": "cobblemon:black_tumblestone"
+  }
+}

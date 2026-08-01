@@ -1,5 +1,7 @@
 package com.tomtaru.tmtceic.datagen.recipeproviders;
 
+import com.cobblemon.mod.common.CobblemonItems;
+import net.minecraft.world.item.Item;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -109,5 +111,23 @@ public final class Dexes {
             new AncientBlackDex("heavy",    "copper"),
             new AncientBlackDex("leaden",   "iron"),
             new AncientBlackDex("gigaton",   "gold")
+    );
+
+    public record TumbleCrystalDex(Item crystal, int yield, Item result) {}
+
+    public static final List<TumbleCrystalDex> TUMBLECRYSTALDEX = List.of(
+
+            new TumbleCrystalDex(CobblemonItems.SMALL_BUDDING_TUMBLESTONE,        1, CobblemonItems.TUMBLESTONE),
+            new TumbleCrystalDex(CobblemonItems.MEDIUM_BUDDING_TUMBLESTONE,       1, CobblemonItems.TUMBLESTONE),
+            new TumbleCrystalDex(CobblemonItems.LARGE_BUDDING_TUMBLESTONE,        1, CobblemonItems.TUMBLESTONE),
+            new TumbleCrystalDex(CobblemonItems.TUMBLESTONE_CLUSTER,              4, CobblemonItems.TUMBLESTONE),
+            new TumbleCrystalDex(CobblemonItems.SMALL_BUDDING_SKY_TUMBLESTONE,    1, CobblemonItems.SKY_TUMBLESTONE),
+            new TumbleCrystalDex(CobblemonItems.MEDIUM_BUDDING_SKY_TUMBLESTONE,   1, CobblemonItems.SKY_TUMBLESTONE),
+            new TumbleCrystalDex(CobblemonItems.LARGE_BUDDING_SKY_TUMBLESTONE,    1, CobblemonItems.SKY_TUMBLESTONE),
+            new TumbleCrystalDex(CobblemonItems.SKY_TUMBLESTONE_CLUSTER,          4, CobblemonItems.SKY_TUMBLESTONE),
+            new TumbleCrystalDex(CobblemonItems.SMALL_BUDDING_BLACK_TUMBLESTONE,  1, CobblemonItems.BLACK_TUMBLESTONE),
+            new TumbleCrystalDex(CobblemonItems.MEDIUM_BUDDING_BLACK_TUMBLESTONE, 1, CobblemonItems.BLACK_TUMBLESTONE),
+            new TumbleCrystalDex(CobblemonItems.LARGE_BUDDING_BLACK_TUMBLESTONE,  1, CobblemonItems.BLACK_TUMBLESTONE),
+            new TumbleCrystalDex(CobblemonItems.BLACK_TUMBLESTONE_CLUSTER,        4, CobblemonItems.BLACK_TUMBLESTONE)
     );
 }
