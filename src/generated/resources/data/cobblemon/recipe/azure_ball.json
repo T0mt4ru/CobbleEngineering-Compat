@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "tmtceic:expert_mode"
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "group": "basic_balls",
+  "key": {
+    "b": {
+      "item": "cobblemon:blue_apricorn"
+    },
+    "c": {
+      "tag": "cobblemon:tier_1_poke_ball_materials"
+    },
+    "l": {
+      "item": "cobblemon:blue_apricorn"
+    },
+    "r": {
+      "item": "cobblemon:blue_apricorn"
+    },
+    "t": {
+      "item": "cobblemon:blue_apricorn"
+    }
+  },
+  "pattern": [
+    " t ",
+    "lcr",
+    " b "
+  ],
+  "result": {
+    "count": 4,
+    "id": "cobblemon:azure_ball"
+  }
+}

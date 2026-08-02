@@ -47,11 +47,5 @@ public class VanillaRecipes {
                 .define('P', Items.PAPER)
                 .unlockedBy("has_black_tumblestone", InventoryChangeTrigger.TriggerInstance.hasItems(CobblemonItems.BLACK_TUMBLESTONE))
                 .save(output, ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "blueprint_item/ancient_heavy_balls_blueprint"));
-
-        //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.SLIME_BALL)
-        //        .requires(Items.LIME_DYE)
-        //        .requires(vectorwing.farmersdelight.common.registry.ModItems.WHEAT_DOUGH.get())
-        //        .unlockedBy("has_wheat_dough", InventoryChangeTrigger.TriggerInstance.hasItems(vectorwing.farmersdelight.common.registry.ModItems.WHEAT_DOUGH.get()))
-        //        .save(output);
     }
 }

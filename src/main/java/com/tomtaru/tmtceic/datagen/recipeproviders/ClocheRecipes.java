@@ -236,43 +236,36 @@ public class ClocheRecipes {
 
         RecipeOutput farmersdelightOutput = output.withConditions(new ModLoadedCondition("farmersdelight"));
 
-        // for-loop dealing with Berrydex.
-        for (String berryName : Dexes.BERRYDEX) {
-            ResourceLocation berryId = ResourceLocation.fromNamespaceAndPath("cobblemon", berryName + "_berry");
-
-            Item berryItem = BuiltInRegistries.ITEM.get(berryId);
-            Block berryBlock = BuiltInRegistries.BLOCK.get(berryId);
+        for (Dexes.BerryDex  berry : Dexes.BERRYDEX) {
 
             List<StackWithChance> outputs = List.of(
-                    new StackWithChance(new TagOutput(berryItem, 3), chanceGuaranteed),
-                    new StackWithChance(new TagOutput(berryItem, 1), chanceLow)
+                    new StackWithChance(new TagOutput(berry.berryItem(), 3), chanceGuaranteed),
+                    new StackWithChance(new TagOutput(berry.berryItem(), 1), chanceLow)
             );
 
             ClocheRecipe recipe = new ClocheRecipe(
                     outputs,
-                    Ingredient.of(berryItem),
+                    Ingredient.of(berry.berryItem()),
                     soilDirt,
                     timeStandard,
                     fluidWater,
-                    new ClocheRenderFunctions.RenderFunctionCrop(berryBlock)
+                    new ClocheRenderFunctions.RenderFunctionCrop(berry.berryBlock())
             );
 
-            ResourceLocation recipeID = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "cloche/berries/" + berryName + "_berry_on_dirt");
-            output.accept(recipeID, recipe, null);
+            output.accept(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID,"cloche/berries/" + BuiltInRegistries.ITEM.getKey(berry.berryItem()).getPath() + "_on_dirt"), recipe, null);
 
             ClocheRecipe farmersdelightRecipe = new ClocheRecipe(
                     outputs,
-                    Ingredient.of(berryItem),
+                    Ingredient.of(berry.berryItem()),
                     soilRich,
                     timeHalved,
                     fluidWater,
-                    new ClocheRenderFunctions.RenderFunctionCrop(berryBlock)
+                    new ClocheRenderFunctions.RenderFunctionCrop(berry.berryBlock())
             );
 
-            ResourceLocation farmersdelightRecipeID = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "cloche/berries/" + berryName + "_berry_on_rich_soil");
-            farmersdelightOutput.accept(farmersdelightRecipeID, farmersdelightRecipe, null);
-        }
+            farmersdelightOutput.accept(ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID,"cloche/berries/" + BuiltInRegistries.ITEM.getKey(berry.berryItem()).getPath() + "_on_rich_soil"), farmersdelightRecipe, null);
 
+        }
         // for-loop dealing with Mintdex.
         for (String mintColour : Dexes.MINTDEX) {
             ResourceLocation mintSeedID = ResourceLocation.fromNamespaceAndPath("cobblemon", mintColour + "_mint_seeds");

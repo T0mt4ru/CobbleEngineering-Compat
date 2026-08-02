@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "tmtceic:expert_mode"
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "b": {
+      "item": "minecraft:shulker_shell"
+    },
+    "c": {
+      "item": "minecraft:nether_star"
+    },
+    "l": {
+      "tag": "c:ingots/netherite"
+    },
+    "r": {
+      "tag": "c:ingots/netherite"
+    },
+    "t": {
+      "item": "minecraft:shulker_shell"
+    }
+  },
+  "pattern": [
+    " t ",
+    "lcr",
+    " b "
+  ],
+  "result": {
+    "id": "cobblemon:master_ball"
+  }
+}

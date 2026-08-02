@@ -58,8 +58,7 @@ public class BlueprintRecipes {
 
         for (Dexes.AncientSkyDex ball : Dexes.ANCIENTSKYDEX) {
 
-            ResourceLocation ballID = ResourceLocation.fromNamespaceAndPath("cobblemon", "ancient_" + ball.name() + "_ball");
-            TagOutput ballItem = new TagOutput(BuiltInRegistries.ITEM.get(ballID), 4);
+            TagOutput ballItem = new TagOutput(ball.ball(), 4);
 
             List<IngredientWithSize> ingredients = List.of(
                     new IngredientWithSize(Ingredient.of(CobblemonItems.WHITE_APRICORN), 1),
@@ -72,8 +71,8 @@ public class BlueprintRecipes {
                     ballItem,
                     ingredients,
                     "ancient_light_balls",
-                    "ancient_" + ball.name() + "_ball"
-            );
+                    BuiltInRegistries.ITEM.getKey(ball.ball()).getPath())
+            ;
         }
 
         for (Dexes.AncientBlackDex ball : Dexes.ANCIENTBLACKDEX) {

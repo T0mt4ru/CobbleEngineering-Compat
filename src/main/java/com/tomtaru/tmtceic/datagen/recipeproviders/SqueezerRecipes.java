@@ -13,6 +13,7 @@ import net.neoforged.neoforge.fluids.FluidStack;
 public class SqueezerRecipes {
 
     private static final int energyStandard = 3200;
+    private static final int fluidAmountQuarterBucket = 250;
     private static final int fluidAmountEighthBucket = 125;
 
     public static void build(RecipeOutput output) {
@@ -23,7 +24,7 @@ public class SqueezerRecipes {
             IngredientWithSize apricornItem = new IngredientWithSize(Ingredient.of(BuiltInRegistries.ITEM.get(apricornID)), 1);
 
             ResourceLocation aprigelID = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, aprigel + "_aprigel");
-            FluidStack aprigelFluid = new FluidStack(BuiltInRegistries.FLUID.get(aprigelID), fluidAmountEighthBucket);
+            FluidStack aprigelFluid = new FluidStack(BuiltInRegistries.FLUID.get(aprigelID), fluidAmountQuarterBucket);
 
             ResourceLocation dyeID = ResourceLocation.fromNamespaceAndPath("minecraft", aprigel +"_dye");
             TagOutput dyeItem = new TagOutput(BuiltInRegistries.ITEM.get(dyeID));

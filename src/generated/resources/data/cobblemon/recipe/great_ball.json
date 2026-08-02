@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "tmtceic:expert_mode"
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "b": {
+      "item": "cobblemon:blue_apricorn"
+    },
+    "c": {
+      "tag": "cobblemon:tier_2_poke_ball_materials"
+    },
+    "l": {
+      "item": "cobblemon:red_apricorn"
+    },
+    "r": {
+      "item": "cobblemon:red_apricorn"
+    },
+    "t": {
+      "item": "cobblemon:blue_apricorn"
+    }
+  },
+  "pattern": [
+    " t ",
+    "lcr",
+    " b "
+  ],
+  "result": {
+    "count": 4,
+    "id": "cobblemon:great_ball"
+  }
+}

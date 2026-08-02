@@ -1,10 +1,8 @@
 package com.tomtaru.tmtceic;
 
 import com.mojang.logging.LogUtils;
-import com.tomtaru.tmtceic.registry.ModAprigels;
-import com.tomtaru.tmtceic.registry.ModItems;
-import com.tomtaru.tmtceic.registry.ModMedicinals;
-import com.tomtaru.tmtceic.registry.SimpleFluidRegistrar;
+import com.mojang.serialization.MapCodec;
+import com.tomtaru.tmtceic.registry.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
@@ -15,30 +13,41 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.common.conditions.ICondition;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import org.slf4j.Logger;
+
+import java.util.function.Supplier;
 
 @Mod(Tmtceic.MODID)
 public class Tmtceic {
-    // Define mod id
+
     public static final String MODID = "tmtceic";
-    // Directly reference a slf4j logger
+
     private static final Logger LOGGER = LogUtils.getLogger();
-    // Create a Deferred Register to hold Blocks
+
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
-    // Create a Deferred Register to hold Items
+
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
-    // Create a Deferred Register to hold CreativeModeTabs
+
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+
+    public static final DeferredRegister<MapCodec<? extends ICondition>> CONDITION_CODECS =
+            DeferredRegister.create(NeoForgeRegistries.Keys.CONDITION_CODECS, MODID);
+
+    public static final Supplier<MapCodec<ExpertModeCondition>> EXPERT_MODE_CONDITION =
+            CONDITION_CODECS.register("expert_mode", () -> ExpertModeCondition.CODEC);
 
     public Tmtceic(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
@@ -51,6 +60,8 @@ public class Tmtceic {
         ModMedicinals.FLUIDS.register(modEventBus);
         ModMedicinals.FLUID_TYPES.register(modEventBus);
         ModItems.register();
+        ModBlocks.register();
+        CONDITION_CODECS.register(modEventBus);
 
 
         CREATIVE_MODE_TABS.register(modEventBus);
@@ -60,7 +71,7 @@ public class Tmtceic {
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
-        // modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
