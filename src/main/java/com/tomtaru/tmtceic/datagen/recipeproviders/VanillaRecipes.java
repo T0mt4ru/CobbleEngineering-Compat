@@ -3,6 +3,7 @@ package com.tomtaru.tmtceic.datagen.recipeproviders;
 import blusunrize.immersiveengineering.api.crafting.BlueprintCraftingRecipe;
 import com.cobblemon.mod.common.CobblemonItems;
 import com.tomtaru.tmtceic.Tmtceic;
+import com.tomtaru.tmtceic.registry.ModItems;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
@@ -47,5 +48,17 @@ public class VanillaRecipes {
                 .define('P', Items.PAPER)
                 .unlockedBy("has_black_tumblestone", InventoryChangeTrigger.TriggerInstance.hasItems(CobblemonItems.BLACK_TUMBLESTONE))
                 .save(output, ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "blueprint_item/ancient_heavy_balls_blueprint"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.NETHER_STAR)
+                .pattern("STS")
+                .pattern("MNM")
+                .pattern("STS")
+                .define('S', Ingredient.of(ModItems.SHINY_STONE_DUST))
+                .define('T', Ingredient.of(ModItems.SUN_STONE_DUST))
+                .define('M', Ingredient.of(ModItems.MOON_STONE_DUST))
+                .define('N', Ingredient.of(CobblemonItems.STAR_SWEET))
+                .unlockedBy("has_star_sweet", InventoryChangeTrigger.TriggerInstance.hasItems(CobblemonItems.STAR_SWEET))
+                .save(output, ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "nether_star_from_star_sweet"));
+
     }
 }

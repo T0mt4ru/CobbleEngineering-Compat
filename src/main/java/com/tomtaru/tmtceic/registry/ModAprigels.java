@@ -36,13 +36,14 @@ public class ModAprigels {
 
     // ARGB ints - alpha first byte must be FF or it renders invisible/transparent
     // public static final AprigelEntry APRIGEL        = register("aprigel", 0xFFFFFFFF);
-    public static final AprigelEntry RED_APRIGEL    = register("red_aprigel",       0xFFE22D24);
-    public static final AprigelEntry YELLOW_APRIGEL = register("yellow_aprigel",    0xFFE5A817);
-    public static final AprigelEntry GREEN_APRIGEL  = register("green_aprigel",     0xFF35A310);
-    public static final AprigelEntry BLUE_APRIGEL   = register("blue_aprigel",      0xFF186EE5);
-    public static final AprigelEntry PINK_APRIGEL   = register("pink_aprigel",      0xFFDF5291);
-    public static final AprigelEntry WHITE_APRIGEL  = register("white_aprigel",     0xFFDEDEE2);
-    public static final AprigelEntry BLACK_APRIGEL  = register("black_aprigel",     0xFF3D4353);
+    public static final AprigelEntry RED_APRIGEL        = register("red_aprigel",       0xFFE22D24);
+    public static final AprigelEntry YELLOW_APRIGEL     = register("yellow_aprigel",    0xFFE5A817);
+    public static final AprigelEntry GREEN_APRIGEL      = register("green_aprigel",     0xFF35A310);
+    public static final AprigelEntry BLUE_APRIGEL       = register("blue_aprigel",      0xFF186EE5);
+    public static final AprigelEntry PINK_APRIGEL       = register("pink_aprigel",      0xFFDF5291);
+    public static final AprigelEntry WHITE_APRIGEL      = register("white_aprigel",     0xFFDEDEE2);
+    public static final AprigelEntry BLACK_APRIGEL      = register("black_aprigel",     0xFF3D4353);
+    public static final AprigelEntry STELLAR_APRIGEL    = register("stellar_aprigel",   0xFF6F2DA8);
 
     public static Collection<AprigelEntry> entries() {
         return ENTRIES.values();

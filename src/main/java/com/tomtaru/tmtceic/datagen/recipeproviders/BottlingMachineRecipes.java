@@ -4,8 +4,10 @@ import blusunrize.immersiveengineering.api.crafting.BottlingMachineRecipe;
 import blusunrize.immersiveengineering.api.crafting.IngredientWithSize;
 import blusunrize.immersiveengineering.api.crafting.TagOutput;
 import blusunrize.immersiveengineering.api.crafting.TagOutputList;
+import com.cobblemon.mod.common.CobblemonItems;
 import com.tomtaru.tmtceic.Tmtceic;
 
+import com.tomtaru.tmtceic.registry.ModAprigels;
 import com.tomtaru.tmtceic.registry.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 
@@ -62,6 +64,13 @@ public class BottlingMachineRecipes {
 
             generateBottlingRecipe(output, ballItem, frameItem, aprigel, "balls/"+ ball + "_ball_from_" + Dexes.ADVANCEDBALL_TO_FRAME.get(ball));
         }
+
+        generateBottlingRecipe(output,
+                List.of(new TagOutput(CobblemonItems.MASTER_BALL)),
+                frameNetherite,
+                SizedFluidIngredient.of(ModAprigels.STELLAR_APRIGEL.source().get(), fluidAmountEighthBucket),
+                "balls/master_ball_from_netherite_frame"
+        );
     }
 
     /**

@@ -1,10 +1,11 @@
-// 1.21.1	2026-07-26T11:46:25.2168471	Tags for minecraft:fluid mod id tmtceic
-1cfa0acd73848c88361556d80eb6b6aed4565d2b data/tmtceic/tags/fluid/aprigels/all_aprigels.json
+// 1.21.1	2026-08-03T11:34:08.6927965	Tags for minecraft:fluid mod id tmtceic
+a25eecf478011e1a4a932de8b790da32626ce4b2 data/tmtceic/tags/fluid/aprigels/all_aprigels.json
 648149928d8d63ec43bd80e56325694d1802afa8 data/tmtceic/tags/fluid/aprigels/black_aprigel.json
 e8629fd10c09a5a6d786fa96f72a61fdcb2d02c6 data/tmtceic/tags/fluid/aprigels/blue_aprigel.json
 76a651c9b39d84e21f0aa792a6577cdef7548961 data/tmtceic/tags/fluid/aprigels/green_aprigel.json
 d5893f6214b4ecc76812f1bd9d5164525d8015a0 data/tmtceic/tags/fluid/aprigels/pink_aprigel.json
 6611e9788017cbd2d8b85ef7a95272582c2d925f data/tmtceic/tags/fluid/aprigels/red_aprigel.json
+202e6b6bebee056bb97f383cf1998cfb46aaeabe data/tmtceic/tags/fluid/aprigels/stellar_aprigel.json
 abc686dcb8cd8c11fdc29f023a8457894612b225 data/tmtceic/tags/fluid/aprigels/white_aprigel.json
 e97601a5abef4c67ee0f53d8dce497cbcecdf15e data/tmtceic/tags/fluid/aprigels/yellow_aprigel.json
 33416133b5c358822eb0aa841637ca57757ba94d data/tmtceic/tags/fluid/bases/medicinal_brew.json

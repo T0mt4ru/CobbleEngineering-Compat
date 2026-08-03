@@ -1,0 +1,15 @@
+{
+  "type": "immersiveengineering:refinery",
+  "catalyst": {
+    "tag": "c:nether_stars"
+  },
+  "energy": 1600,
+  "input0": {
+    "amount": 1,
+    "tag": "tmtceic:aprigels/all_aprigels"
+  },
+  "result": {
+    "amount": 1,
+    "id": "tmtceic:stellar_aprigel"
+  }
+}

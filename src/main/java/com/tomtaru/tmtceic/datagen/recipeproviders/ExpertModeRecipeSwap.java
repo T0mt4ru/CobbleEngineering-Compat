@@ -27,7 +27,6 @@ public final class ExpertModeRecipeSwap {
             JsonObject original = readOriginalRecipe(jarAnchor, id);
 
             if (original == null) {
-                System.out.println("[tmtceic] No original recipe found for " + id + " — skipping entirely.");
                 return CompletableFuture.completedFuture(null);
             }
 

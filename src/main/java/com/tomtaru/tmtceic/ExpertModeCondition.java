@@ -13,7 +13,6 @@ public class ExpertModeCondition implements ICondition {
 
     @Override
     public boolean test(IContext context) {
-        System.out.println("[tmtceic] ExpertModeCondition.test() -> " + Config.expertMode);
         return Config.expertMode;
     }
 

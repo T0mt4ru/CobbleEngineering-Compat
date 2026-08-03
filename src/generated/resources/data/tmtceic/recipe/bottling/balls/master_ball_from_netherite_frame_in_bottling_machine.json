@@ -1,0 +1,15 @@
+{
+  "type": "immersiveengineering:bottling_machine",
+  "fluid": {
+    "amount": 125,
+    "fluid": "tmtceic:stellar_aprigel"
+  },
+  "input": {
+    "item": "tmtceic:netherite_pokeball_frame"
+  },
+  "results": [
+    {
+      "id": "cobblemon:master_ball"
+    }
+  ]
+}

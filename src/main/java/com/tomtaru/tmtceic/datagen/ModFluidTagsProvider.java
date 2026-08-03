@@ -64,6 +64,7 @@ public class ModFluidTagsProvider extends FluidTagsProvider {
         TagKey<Fluid> pinkAprigel = TagKey.create(Registries.FLUID, ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "aprigels/pink_aprigel"));
         TagKey<Fluid> blackAprigel = TagKey.create(Registries.FLUID, ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "aprigels/black_aprigel"));
         TagKey<Fluid> whiteAprigel = TagKey.create(Registries.FLUID, ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "aprigels/white_aprigel"));
+        TagKey<Fluid> stellarAprigel = TagKey.create(Registries.FLUID, ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "aprigels/stellar_aprigel"));
 
         // ASSIGN FLUIDS TO LEAF TAGS
         // --- HP POTIONS ---
@@ -99,6 +100,7 @@ public class ModFluidTagsProvider extends FluidTagsProvider {
         tag(pinkAprigel).add(ModAprigels.PINK_APRIGEL.source().get());
         tag(blackAprigel).add(ModAprigels.BLACK_APRIGEL.source().get());
         tag(whiteAprigel).add(ModAprigels.WHITE_APRIGEL.source().get());
+        tag(stellarAprigel).add(ModAprigels.STELLAR_APRIGEL.source().get());
 
 
 
@@ -134,7 +136,8 @@ public class ModFluidTagsProvider extends FluidTagsProvider {
                 .addTag(greenAprigel)
                 .addTag(pinkAprigel)
                 .addTag(blackAprigel)
-                .addTag(whiteAprigel);
+                .addTag(whiteAprigel)
+                .addTag(stellarAprigel);
 
         // Full Restore restores both HP and Status, so it belongs in both sub-groups!
         tag(allPotions).addTag(fullRestore);

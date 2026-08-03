@@ -27,5 +27,6 @@ public class ModRecipeProvider extends RecipeProvider {
         SqueezerRecipes.build(output);
         BlueprintRecipes.build(output);
         ThermoelectricRecipes.build(output);
+        RefineryRecipes.build(output);
     }
 }

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "tmtceic:moon_stone_dust"
+    },
+    "N": {
+      "item": "cobblemon:star_sweet"
+    },
+    "S": {
+      "item": "tmtceic:shiny_stone_dust"
+    },
+    "T": {
+      "item": "tmtceic:sun_stone_dust"
+    }
+  },
+  "pattern": [
+    "STS",
+    "MNM",
+    "STS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:nether_star"
+  }
+}
