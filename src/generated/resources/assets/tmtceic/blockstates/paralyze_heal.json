@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "level=0": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=1": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=10": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=11": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=12": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=13": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=14": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=15": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=2": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=3": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=4": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=5": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=6": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=7": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=8": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    },
+    "level=9": {
+      "model": "tmtceic:block/paralyze_heal_fluid"
+    }
+  }
+}

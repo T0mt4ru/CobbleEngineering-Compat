@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tmtceic:block/hyper_potion_still",
+    "particle": "tmtceic:block/hyper_potion_still"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tmtceic:block/burn_heal_still",
+    "particle": "tmtceic:block/burn_heal_still"
+  }
+}

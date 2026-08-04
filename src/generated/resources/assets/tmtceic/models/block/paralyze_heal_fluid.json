@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tmtceic:block/paralyze_heal_still",
+    "particle": "tmtceic:block/paralyze_heal_still"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tmtceic:block/max_ether_still",
+    "particle": "tmtceic:block/max_ether_still"
+  }
+}

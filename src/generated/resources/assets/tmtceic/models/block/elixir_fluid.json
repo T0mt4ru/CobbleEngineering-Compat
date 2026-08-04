@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tmtceic:block/elixir_still",
+    "particle": "tmtceic:block/elixir_still"
+  }
+}
