@@ -236,6 +236,7 @@ public class ClocheRecipes {
 
         RecipeOutput farmersdelightOutput = output.withConditions(new ModLoadedCondition("farmersdelight"));
         RecipeOutput dynamictreescobblemonOutput = output.withConditions(new ModLoadedCondition("dtcobblemon"));
+        RecipeOutput dynamictreesAndFarmersdelightOutput = output.withConditions(new ModLoadedCondition("dtcobblemon")).withConditions(new ModLoadedCondition("farmersdelight"));
 
         for (Dexes.BerryDex  berry : Dexes.BERRYDEX) {
 
@@ -409,7 +410,7 @@ public class ClocheRecipes {
             farmersdelightOutput.accept(farmersdelightRecipeID, farmersdelightRecipe, null);
 
             ResourceLocation dtFarmersdelightRecipeID = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "cloche/apricorns/" + apricornName + "_dt_apricorn_on_rich_soil");
-            dynamictreescobblemonOutput.accept(dtFarmersdelightRecipeID, dtFarmersdelightRecipe, null);
+            dynamictreesAndFarmersdelightOutput.accept(dtFarmersdelightRecipeID, dtFarmersdelightRecipe, null);
         }
 
         for (MiscCrop crop : MISCDEX) {
