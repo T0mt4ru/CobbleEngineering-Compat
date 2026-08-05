@@ -1,2 +1,9 @@
-// 1.21.1	2026-07-27T12:39:47.1824705	Tags for minecraft:item mod id tmtceic
+// 1.21.1	2026-08-05T19:59:03.1414397	Tags for minecraft:item mod id tmtceic
+b3942452a037ffcc2f984ecd00b06453ebd19114 data/tmtceic/tags/item/compat/black_dt_apricorn.json
+4eb2ce4a6b0318612502cb6ad92fd9a5c14d427e data/tmtceic/tags/item/compat/blue_dt_apricorn.json
+20e483b98af1eb12c03deb493eef9e2154a3ed32 data/tmtceic/tags/item/compat/green_dt_apricorn.json
+071b5d63e1bf0b96ab6038bd54d4c3e3eca47104 data/tmtceic/tags/item/compat/pink_dt_apricorn.json
+dc77eec62c91800e8e0b5421ca87d3299e19bb64 data/tmtceic/tags/item/compat/red_dt_apricorn.json
 3f5d4ab6da6edd09f34ea92be638de91d3c527e8 data/tmtceic/tags/item/compat/rich_soil.json
+857540b535187ead6db3d1660a496fbda3eef99c data/tmtceic/tags/item/compat/white_dt_apricorn.json
+40a80912b33cae4d6cd764ed11aa694ed2b99985 data/tmtceic/tags/item/compat/yellow_dt_apricorn.json

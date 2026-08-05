@@ -235,6 +235,7 @@ public class ClocheRecipes {
     public static void build(RecipeOutput output) {
 
         RecipeOutput farmersdelightOutput = output.withConditions(new ModLoadedCondition("farmersdelight"));
+        RecipeOutput dynamictreescobblemonOutput = output.withConditions(new ModLoadedCondition("dtcobblemon"));
 
         for (Dexes.BerryDex  berry : Dexes.BERRYDEX) {
 
@@ -348,12 +349,18 @@ public class ClocheRecipes {
             ResourceLocation apricornSaplingID = ResourceLocation.fromNamespaceAndPath("cobblemon", apricornName + "_apricorn_sapling");
 
             Item apricornSprout = BuiltInRegistries.ITEM.get(apricornSproutID);
+            TagKey<Item> dtapricornSprout = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "compat/" + apricornName + "_dt_apricorn"));
             Block apricornBlock = BuiltInRegistries.BLOCK.get(apricornSaplingID);
             Item apricornFruit = BuiltInRegistries.ITEM.get(apricornFruitID);
 
             List<StackWithChance> outputs = List.of(
                     new StackWithChance(new TagOutput(apricornFruit, 1), chanceGuaranteed),
                     new StackWithChance(new TagOutput(apricornSprout, 1), 0.1F)
+            );
+
+            List<StackWithChance> dtOutputs = List.of(
+                    new  StackWithChance(new TagOutput(apricornFruit, 1), chanceGuaranteed),
+                    new StackWithChance(new TagOutput(dtapricornSprout, 1), 0.1F)
             );
 
             ClocheRecipe recipe = new ClocheRecipe(
@@ -365,8 +372,20 @@ public class ClocheRecipes {
                     new ClocheRenderFunctions.RenderFunctionGeneric(apricornBlock)
             );
 
+            ClocheRecipe dtRecipe = new ClocheRecipe(
+                    dtOutputs,
+                    Ingredient.of(dtapricornSprout),
+                    soilDirt,
+                    timeDoubled,
+                    fluidWater,
+                    new ClocheRenderFunctions.RenderFunctionGeneric(apricornBlock)
+            );
+
             ResourceLocation recipeID = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "cloche/apricorns/" + apricornName + "_apricorn_on_dirt");
             output.accept(recipeID, recipe, null);
+
+            ResourceLocation dtRecipeID = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "cloche/apricorns/" + apricornName + "_dt_apricorn_on_dirt");
+            dynamictreescobblemonOutput.accept(dtRecipeID, dtRecipe, null);
 
             ClocheRecipe farmersdelightRecipe = new ClocheRecipe(
                     outputs,
@@ -377,8 +396,20 @@ public class ClocheRecipes {
                     new ClocheRenderFunctions.RenderFunctionGeneric(apricornBlock)
             );
 
+            ClocheRecipe dtFarmersdelightRecipe = new ClocheRecipe(
+                    dtOutputs,
+                    Ingredient.of(dtapricornSprout),
+                    soilRich,
+                    timeStandard,
+                    fluidWater,
+                    new ClocheRenderFunctions.RenderFunctionGeneric(apricornBlock)
+            );
+
             ResourceLocation farmersdelightRecipeID = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "cloche/apricorns/" + apricornName + "_apricorn_on_rich_soil");
             farmersdelightOutput.accept(farmersdelightRecipeID, farmersdelightRecipe, null);
+
+            ResourceLocation dtFarmersdelightRecipeID = ResourceLocation.fromNamespaceAndPath(Tmtceic.MODID, "cloche/apricorns/" + apricornName + "_dt_apricorn_on_rich_soil");
+            dynamictreescobblemonOutput.accept(dtFarmersdelightRecipeID, dtFarmersdelightRecipe, null);
         }
 
         for (MiscCrop crop : MISCDEX) {
